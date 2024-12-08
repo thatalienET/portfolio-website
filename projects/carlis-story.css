@@ -1,0 +1,58 @@
+.intro {
+    padding: 5% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.intro-title {
+    width: 44%;
+    display: inline-block;
+}
+
+.intro-title img {
+    width: 180%;
+    margin: -40% -30% -50% -30%;
+    overflow: hidden;
+}
+
+.intro-text {
+    width: 54%;
+    padding: 0% 5.5%;
+    text-align: center;
+    font-size: 0.955vw;
+    color: #eee;
+    display: inline-block;
+}
+
+.purple-bg {
+    background-image: url('/assets/projects/carlis story/Purple BG.png');
+    width: 100%;
+}
+
+.padding {
+    padding: 40px;
+}
+
+.flex-title {
+    text-align: center;
+    color: #eee;
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 2vw;
+}
+
+.flex-column-a {
+    flex: 33%;
+    max-width: 33%;
+    align-items: center;
+    padding: 20px 10px 50px 100px;
+}
+
+.flex-column-b {
+    flex: 65%;
+    max-width: 65%;
+    align-items: center;
+    padding: 20px 100px 50px 10px;
+}

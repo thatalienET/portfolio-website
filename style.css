@@ -38,6 +38,7 @@ nav {
     left: -80;
     top: -55;
     height: 250px;
+    width: auto;
 }
 
 .links {
@@ -63,6 +64,7 @@ nav ul {
 
 nav ul li {
     margin: 0;
+    margin-top: 50px;
     padding: 0;
     float:left;
 }
@@ -71,20 +73,25 @@ nav ul li a {
     color: #272822;
     font-size: 22px;
     text-decoration: none;
-    padding: 60px 10px;
+    padding: 10px 10px;
     display: block;
     text-align: center;
+}
+
+nav ul li.active {
+    border-bottom: 1px solid #272822;
+}
+
+nav ul li:hover {
+    border-bottom: 3px solid #272822;
+    transition:ease;
+    transition-duration: 15ms;
 }
 
 .spacer {
     padding-left: 0%;
     padding-right: 0%;
     cursor: default;
-}
-
-nav ul li a a:hover {
-    border-bottom: 2px solid #272822;
-    transition: .3s;
 }
 
 /* </nav> */
@@ -100,6 +107,7 @@ footer {
 
 .footer-logo {
     height: 200px;
+    width: auto;
     text-align: center;
     margin-bottom: -1.2%;
 }
@@ -127,14 +135,47 @@ footer {
 }
 
 body {
-    background: #f4f4f4;
+    background: #fafafa;
+}
+
+img {
+    width: 100%;
+}
+
+.fullwidth {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.fullwidth-bottom {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nav-gap {
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
 .gallery-item {
-    width: 49%;
-    padding-top: 1%;
-    padding-left: 2%;
-    display: inline-block;
+    width: 50%;
+    margin: 40px 0px;
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+.gallery-label {
+    padding: 10px 0px 0px 5px;
+    font-weight: 500;
+    color: #272822;
 }
 
 .reel {
@@ -142,33 +183,16 @@ body {
     margin: 140px 10% 2%;
 }
 
-.professional-work {
-    margin: 140px 0% 0%;
-    width: 100%;
+.project {
+    margin: 140px 10% 0%;
+    width: 80%;
 }
 
-.pro-work-item {
-    width: 49%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    display: inline-block;
-}
-
-.pro-label {
-    padding: 10px 0px 0px 5px;
-    font-weight: 500;
-}
-
-.personal-work {
-    margin: 140px 0% 0%;
-    width: 100%;
-}
-
-.work-item {
-    width: 49%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    display: inline-block;
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contact {

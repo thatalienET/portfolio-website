@@ -12,24 +12,25 @@
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="/shared.js"></script>
 </head>
 
 <body class="roboto-regular">
     <nav>
-        <!-- Site logo -->
         <img class="logo" src="/assets/shared/Alex Smith_optimized.gif">
         <!-- Navigation links -->
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a class="spacer" href="#">|</a></li>
-            <li class="active"><a href="/reel">Reel</a></li>
-            <li><a class="spacer" href="#">|</a></li>
-            <li><a href="/professional-work">Professional Work</a></li>
-            <li><a class="spacer" href="#">|</a></li>
-            <li><a href="/personal-work">Personal Work</a></li>
-            <li><a class="spacer" href="#">|</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+        <div id="topnav" class="topnav">
+            <a href="/">Home</a>
+            <a class="spacer" href="#">|</a>
+            <a href="/reel" class="active">Reel</a>
+            <a class="spacer" href="#">|</a>
+            <a href="/professional-work">Professional Work</a>
+            <a class="spacer" href="#">|</a>
+            <a href="/personal-work">Personal Work</a>
+            <a class="spacer" href="#">|</a>
+            <a href="/contact">Contact</a>
+        </div>
         <div class="links">
             <a class="links-item" href="https://www.instagram.com/studioalexandraink">
                 <i class="fa-brands fa-instagram fa-xl"></i>
@@ -41,22 +42,25 @@
                 <i class="fa-brands fa-vimeo-v fa-xl"></i>
             </a>
         </div>
+        <a href="javascript:void(0);" class="menu-icon" onclick="menuControl()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
     </nav>
-
-    <img class="reel" src="/assets/thumbs/Showreel - Thumbnail 1.png" >
+    <iframe src="https://player.vimeo.com/video/1037223040?app_id=58479" frameborder="0" allow="autoplay" class="reel"
+        title="Showreel 2024"></iframe>
 
     <br>
     <footer>
         <img class="footer-logo" src="/assets/shared/Alex Smith Logo.png">
         <div class="footer-links">
             <a class="footer-links-item" href="https://www.instagram.com/studioalexandraink">
-                <i class="fa-brands fa-instagram fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
             <a class="footer-links-item" href="https://www.linkedin.com/in/alexannesmith/">
-                <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                <i class="fa-brands fa-linkedin-in fa-2x"></i>
             </a>
             <a class="footer-links-item" href="#">
-                <i class="fa-brands fa-vimeo-v fa-2xl"></i>
+                <i class="fa-brands fa-vimeo-v fa-2x"></i>
             </a>
         </div>
     </footer>

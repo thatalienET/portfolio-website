@@ -1,14 +1,14 @@
 .intro {
     padding: 5% 0%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .intro-title {
     width: 44%;
-    display: inline-block;
 }
 
 .intro-title img {
@@ -23,7 +23,27 @@
     text-align: center;
     font-size: 0.955vw;
     color: #eee;
-    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+    .intro-title {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .intro-title img {
+        width: 140%;
+        margin: -27% -20%;
+        overflow: hidden;
+    }
+
+    .intro-text {
+        width: 100%;
+        padding: 0% 5.1%;
+        text-align: center;
+        font-size: 2vw;
+        color: #eee;
+    }
 }
 
 .purple-bg {
@@ -33,6 +53,14 @@
 
 .padding {
     padding: 40px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .padding {
+        padding: 10px;
+    }
+
 }
 
 .flex-title {
@@ -50,9 +78,37 @@
     padding: 20px 10px 50px 100px;
 }
 
+.flex-column-a img {
+    padding: 20px 0px;
+}
+
 .flex-column-b {
     flex: 65%;
     max-width: 65%;
     align-items: center;
     padding: 20px 100px 50px 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .flex-title {
+        margin: 10px 0px;
+    }
+
+    .flex-column-a {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0px 0px;
+    }
+
+    .flex-column-a img {
+        padding: 10px;
+    }
+
+    .flex-column-b {
+        flex: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
 }

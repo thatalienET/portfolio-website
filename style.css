@@ -36,26 +36,29 @@ nav {
     font-size: 24px;
 }
 
-.logo {
+.logo-wrapper {
     position: absolute;
-    left: -70;
-    top: -50;
+    left: 0;
+    top: 0;
+    height: 140px;
+}
+
+.logo {
+    margin: -50px 0 0 -70px;
     height: 250px;
-    width: auto;
 }
 
 .links {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 0;
     margin-right: 40px;
     padding: 0;
 }
 
 .links-item {
     color: #272822;
-    margin: 70px 8px;
+    margin: 60px 8px 0;
     display: inline-block;
 }
 
@@ -76,6 +79,15 @@ nav {
     text-align: center;
 }
 
+.topnav div {
+    margin-top: 50px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 0.2vw;
+    cursor: default;
+}
+
 .topnav a.active {
     border-bottom: 1px solid #272822;
 }
@@ -86,45 +98,43 @@ nav {
     transition-duration: 15ms;
 }
 
-.spacer {
-    padding-left: 0%;
-    padding-right: 0%;
-    cursor: default;
-}
-
 .menu-icon {
     color: #272822;
     display: none;
 }
 
 @media screen and (max-width: 1400px) {
+
     nav {
         font-size: 20px;
     }
+
 }
 
 @media screen and (max-width: 1200px) {
+
     nav {
         font-size: 16px;
     }
 
     .logo {
-        left: -70;
-        top: -25;
+        margin: -25px 0 0 -75px;
         height: 200px;
     }
+
 }
 
 @media screen and (max-width: 1000px) {
+
     nav {
         font-size: 14px;
     }
 
     .logo {
-        left: -50;
-        top: -17;
+        margin: -17px 0 0 -50px;
         height: 175px;
     }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -134,12 +144,11 @@ nav {
     }
 
     .logo {
-        left: -70;
-        top: -25;
+        margin: -25px 0 0 -70px;
         height: 200px;
     }
 
-    .topnav a {
+    .topnav a, .topnav div, .links {
         display: none;
     }
 
@@ -159,20 +168,14 @@ nav {
         text-align: center;
         color: #fafafa;
         margin: 0;
-        padding: 50px auto;
+        padding: auto;
+        padding-top: calc(8.3vh - 14px);
+        padding-bottom: calc(8.3vh - 14px);
+        font-size: 3vh;
     }
 
     .topnav.responsive a:hover {
         background-color: #444;
-    }
-
-
-    .topnav.responsive a.spacer {
-        display: none;
-    }
-
-    .links {
-        display: none;
     }
 
     .menu-icon {

@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" as="image" href="/assets/shared/Alex Smith_optimized.gif">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous"></script>
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script src="/shared.js"></script>
+  <script src="https://player.vimeo.com/api/player.js" async></script>
+  <script src="/shared.js" async></script>
 </head>
 
 <body class="roboto-regular">
   <nav>
-    <a href="/"><img class="logo" src="/assets/shared/Alex Smith_optimized.gif"></a>
+    <a href="/"><img class="logo" aria-label="ufo-logo" src="/assets/shared/Alex Smith_optimized.gif"></a>
     <!-- Navigation links -->
     <div id="topnav" class="topnav">
       <a href="/" class="active">Home</a>
@@ -33,22 +34,22 @@
     </div>
     <div class="links">
       <a class="links-item" href="https://www.instagram.com/studioalexandraink">
-        <i class="fa-brands fa-instagram fa-xl"></i>
+        <i  aria-label="instagram" class="fa-brands fa-instagram fa-xl"></i>
       </a>
       <a class="links-item" href="https://www.linkedin.com/in/alexannesmith/">
-        <i class="fa-brands fa-linkedin-in fa-xl"></i>
+        <i  aria-label="linkedin" class="fa-brands fa-linkedin-in fa-xl"></i>
       </a>
       <a class="links-item" href="#">
-        <i class="fa-brands fa-vimeo-v fa-xl"></i>
+        <i  aria-label="vimeo" class="fa-brands fa-vimeo-v fa-xl"></i>
       </a>
     </div>
     <a href="javascript:void(0);" class="menu-icon" onclick="menuControl()">
-      <i class="fa fa-bars fa-2x"></i>
+      <i aria-label="menu-icon" class="fa fa-bars fa-2x"></i>
     </a>
   </nav>
   <div class="fullwidth-bottom">
     <a href="/reel" style="display : block;">
-      <iframe
+      <iframe async aria-label="showreel"
         src="https://player.vimeo.com/video/1037223040?autoplay=1&loop=1&muted=1&title=0&sidedock=0&controls=0&app_id=58479"
         frameborder="0" allow="autoplay" class="background-video"></iframe>
     </a>
@@ -56,36 +57,36 @@
   <div class="gallery">
     <div class="gallery-item">
       <a href="/projects/professional/carlis-story">
-        <img src="/assets/thumbs/professional/Carli_s Story - Thumbnail 2.png">
+        <img aria-label="carlis story project" loading="lazy" src="/assets/thumbs/professional/Carli_s Story - Thumbnail 2.jpg">
       </a>
     </div>
     <div class="gallery-item">
       <a href="/projects/personal/keyboard-project">
-        <img src="/assets/thumbs/personal/Keyboard Project - Thumbnail 1.jpg">
+        <img aria-label="keyboard project" loading="lazy" src="/assets/thumbs/personal/Keyboard Project - Thumbnail 1.jpg">
       </a>
     </div>
     <div class="gallery-item">
       <a href="/projects/personal/aliens-aboard">
-        <img src="/assets/thumbs/personal/Aliens Aboard - Thumbnail 1.jpg">
+        <img aria-label="aliens aboard project" loading="lazy" src="/assets/thumbs/personal/Aliens Aboard - Thumbnail 1.jpg">
       </a>
     </div>
     <div class="gallery-item">
       <a href="/projects/professional/nominet">
-        <img src="/assets/thumbs/professional/Nominet TV Ad - Thumbnail 1.jpg">
+        <img aria-label="nominet project" loading="lazy" src="/assets/thumbs/professional/Nominet TV Ad - Thumbnail 1.jpg">
       </a>
     </div>
   </div>
   <footer>
-    <img class="footer-logo" src="/assets/shared/Alex Smith Logo.png">
+    <img class="footer-logo" aria-label="logo" loading="lazy" src="/assets/shared/Alex Smith Logo.png">
     <div class="footer-links">
       <a class="footer-links-item" href="https://www.instagram.com/studioalexandraink">
-        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i aria-label="instagram" class="fa-brands fa-instagram fa-2x"></i>
       </a>
       <a class="footer-links-item" href="https://www.linkedin.com/in/alexannesmith/">
-        <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-2x"></i>
       </a>
       <a class="footer-links-item" href="#">
-        <i class="fa-brands fa-vimeo-v fa-2x"></i>
+        <i aria-label="vimeo" class="fa-brands fa-vimeo-v fa-2x"></i>
       </a>
     </div>
   </footer>

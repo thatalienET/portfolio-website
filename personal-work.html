@@ -11,13 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous"></script>
-    <script src="/shared.js"></script>
+    <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
+    <script src="/shared.js" async></script>
 </head>
 
 <body class="roboto-regular">
     <nav>
-        <a href="/"><img class="logo" src="/assets/shared/Alex Smith_optimized.gif"></a>
+        <a href="/" aria-label="ufo-logo home link">
+            <img class="logo" aria-label="ufo-logo" fetchpriority="high" src="/assets/shared/Alex Smith_optimized.gif">
+        </a>
         <!-- Navigation links -->
         <div id="topnav" class="topnav">
             <a href="/">Home</a>
@@ -31,14 +33,14 @@
             <a href="/contact">Contact</a>
         </div>
         <div class="links">
-            <a class="links-item" href="https://www.instagram.com/studioalexandraink">
-                <i class="fa-brands fa-instagram fa-xl"></i>
+            <a class="links-item" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
+                <i aria-label="instagram" class="fa-brands fa-instagram fa-xl"></i>
             </a>
-            <a class="links-item" href="https://www.linkedin.com/in/alexannesmith/">
-                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            <a class="links-item" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
+                <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-xl"></i>
             </a>
-            <a class="links-item" href="#">
-                <i class="fa-brands fa-vimeo-v fa-xl"></i>
+            <a class="links-item" aria-label="vimeo" href="https://vimeo.com/user/99162102/folder/23180859">
+                <i aria-label="vimeo" class="fa-brands fa-vimeo-v fa-xl"></i>
             </a>
         </div>
         <a href="javascript:void(0);" class="menu-icon" onclick="menuControl()">
@@ -109,16 +111,16 @@
     </div>
     <br />
     <footer>
-        <img class="footer-logo" src="/assets/shared/Alex Smith Logo.png">
+        <img class="footer-logo" aria-label="logo" loading="lazy" src="/assets/shared/Alex Smith Logo.png">
         <div class="footer-links">
-            <a class="footer-links-item" href="https://www.instagram.com/studioalexandraink">
-                <i class="fa-brands fa-instagram fa-2x"></i>
+            <a class="footer-links-item" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
+                <i aria-label="instagram" class="fa-brands fa-instagram fa-2x"></i>
             </a>
-            <a class="footer-links-item" href="https://www.linkedin.com/in/alexannesmith/">
-                <i class="fa-brands fa-linkedin-in fa-2x"></i>
+            <a class="footer-links-item" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
+                <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-2x"></i>
             </a>
-            <a class="footer-links-item" href="#">
-                <i class="fa-brands fa-vimeo-v fa-2x"></i>
+            <a class="footer-links-item" aria-label="vimeo" href="https://vimeo.com/user/99162102/folder/23180859">
+                <i aria-label="vimeo" class="fa-brands fa-vimeo-v fa-2x"></i>
             </a>
         </div>
     </footer>

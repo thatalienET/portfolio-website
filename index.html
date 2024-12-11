@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="preload" as="image" href="/assets/shared/Alex Smith_optimized.gif">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -22,7 +21,10 @@
 <body class="roboto-regular">
   <nav>
     <a href="/" aria-label="ufo-logo home link" class="logo-wrapper">
-      <img class="logo" aria-label="ufo-logo" fetchpriority="high" src="/assets/shared/Alex Smith_optimized.gif">
+      <video class="logo" aria-label="ufo-logo" autoplay loop>
+        <source src="/assets/shared/AlexSmith_optimized.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
     </a>
     <!-- Navigation links -->
     <div id="topnav" class="topnav">

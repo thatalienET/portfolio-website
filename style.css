@@ -46,6 +46,7 @@ nav {
 .logo {
     margin: -50px 0 0 -70px;
     height: 250px;
+    width: 100%;
 }
 
 .links {
@@ -148,7 +149,9 @@ nav {
         height: 200px;
     }
 
-    .topnav a, .topnav div, .links {
+    .topnav a,
+    .topnav div,
+    .links {
         display: none;
     }
 

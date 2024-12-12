@@ -1,5 +1,3 @@
-window.addEventListener('unload', function () { });
-window.addEventListener('beforeunload', function () { });
 
 function menuControl() {
   var x = document.getElementById("topnav");

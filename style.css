@@ -304,15 +304,29 @@ img {
     width: 100%;
 }
 
-.gallery-item {
+[class^="gallery-item"] {
     width: 50%;
     margin: 40px 0px;
     padding: 0px 40px;
     overflow: hidden;
 }
 
+.gallery-item-25 {
+    width: 25%;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+.gallery-item-60 {
+    width: 60%;
+}
+
+.gallery-item-40 {
+    width: 40%;
+}
+
 @media screen and (max-width: 800px) {
-    .gallery-item {
+    [class^="gallery-item"] {
         width: 100%;
         margin: 10px;
         padding: 0;

@@ -1,0 +1,44 @@
+.deep-blue-bg {
+    background-color: #1c1b3a;
+    color: #eee;
+}
+
+.intro {
+    padding: 10% 37%;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.text-block {
+    padding: 5% 19%;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.thanks {
+    padding: 5% 15%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.cobweb-float-left {
+    float: left;
+    position: relative;
+    margin-left: -1vw;
+    margin-bottom: -24vw;
+    padding: 0;
+    bottom: 22.5vw;
+    height: 24vw;
+    width: auto;
+}
+
+.cobweb-float-right {
+    float: right;
+    position: relative;
+    margin-right: -1vw;
+    margin-bottom: -24vw;
+    padding: 0;
+    bottom: 22.5vw;
+    height: 24vw;
+    width: auto;
+}

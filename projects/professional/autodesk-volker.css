@@ -1,0 +1,38 @@
+.blue-bg {
+    background-color: #1a3c8f;
+    color: #eee;
+}
+
+.intro {
+    padding: 5% 17%;
+    text-align: left;
+    font-size: 1.1vw;
+}
+
+.thanks {
+    margin: auto;
+    text-align: center;
+    width: 33%;
+}
+
+.hand-float {
+    position: relative;
+    padding: 0;
+    margin-bottom: -2.5vw;
+    left: -2vw;
+    bottom: 3vw;
+    width: 4.67vw;
+    height: 5vw;
+    rotate: 45deg;
+}
+
+@media screen and (max-width: 800px) {
+
+    .intro {
+        padding: 5%;
+        text-align: left;
+        font-size: 1.8vw;
+        color: #eee;
+    }
+
+}

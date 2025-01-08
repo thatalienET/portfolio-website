@@ -421,6 +421,11 @@ img {
     color: #111;
 }
 
+.cyan-bg {
+    background-color: #7bd9c5;
+    color: #111;
+}
+
 .dark-green-bg {
     background-color: #00453f;
     color: #eee;
@@ -428,6 +433,16 @@ img {
 
 .dark-blue-bg {
     background-color: #003d5a;
+    color: #eee;
+}
+
+.light-red-bg {
+    background-color: #ff0059;
+    color: #eee;
+}
+
+.light-orange-bg {
+    background-color: #ff7e5e;
     color: #eee;
 }
 

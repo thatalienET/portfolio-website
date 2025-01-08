@@ -1,0 +1,30 @@
+.space-bg {
+    background-image: url(/assets/projects/scary-space/Line.png);
+    background-color: #111e29;
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    color: #eee;
+}
+
+.dark-bg {
+    background-color: #111e29;
+    color: #eee;
+}
+
+.intro {
+    padding: 4% 12% 4% 12%;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hand-text {
+    padding: 4% 1% 4% 6%;
+    font-size: 1.2vw;
+}
+
+.thanks {
+    padding: 7% 16%;
+    text-align: center;
+    font-size: 1.8vw;
+}

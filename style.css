@@ -280,6 +280,17 @@ img {
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+    .fullwidth {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fullwidth-bottom {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .fullwidth {
         margin-top: 10px;
@@ -398,6 +409,43 @@ img {
 .project {
     margin: 0 10%;
     width: 80%;
+}
+
+.light-blue-bg {
+    background-color: #acdbdc;
+    color: #111;
+}
+
+.light-yellow-bg {
+    background-color: #fccb61;
+    color: #111;
+}
+
+.dark-green-bg {
+    background-color: #00453f;
+    color: #eee;
+}
+
+.dark-blue-bg {
+    background-color: #003d5a;
+    color: #eee;
+}
+
+.red-bg {
+    background-color: #ff0000;
+    color: #eee;
+}
+
+.intro {
+    padding: 5% 12%;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.thanks {
+    padding: 3%;
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 .flex-row {

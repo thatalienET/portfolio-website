@@ -1,0 +1,31 @@
+.paper-bg {
+    background-image: url(/assets/projects/lightbulb-moment/Layer\ group2.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #111;
+}
+
+.intro {
+    padding: 7% 12% 4% 12%;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.gallery {
+    justify-content: center;
+}
+
+.custom-gallery-item {
+    height: 50vh;
+    margin: 30px 0px;
+    padding: 0px 40px;
+    width: auto;
+    max-width: 100%;
+}
+
+.thanks {
+    padding: 5% 15%;
+    text-align: center;
+    font-size: 1.8vw;
+}

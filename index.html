@@ -9,16 +9,19 @@
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="preload" as="image" href="/assets/shared/AlexSmith_optimized.gif">
   <link rel="preload" as="style" href="/style.css">
+  <link rel="preload" as="style" href="/projects/shared/carousel.css">
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/projects/shared/carousel.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap">
 
   <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
   <script src="/shared.js" async></script>
+  <script src="/projects/shared/carousel.js" async></script>
 </head>
 
 <body class="roboto-regular">
@@ -60,6 +63,36 @@
         frameborder="0" allow="autoplay" class="background-video" defer></iframe>
     </a>
   </div>
+  <section class="carousel-wrapper">
+    <button class="carousel-arrow" id="carousel-arrow-prev">
+      &#8249;
+    </button>
+    <button class="carousel-arrow" id="carousel-arrow-next">
+      &#8250;
+    </button>
+    <ul class="carousel" id="carousel">
+      <li class="carousel-panel">
+        <a href="/projects/personal/converse">
+          <img src="/assets/thumbs/personal/Converse Thumbnail.png">
+        </a>
+      </li>
+      <li class="carousel-panel">
+        <a href="/reel">
+          <img src="/assets/thumbs/Showreel - Thumbnail 1.jpg">
+        </a>
+      </li>
+      <li class="carousel-panel">
+        <a href="/projects/professional/torpedo">
+          <img src="/assets/thumbs/professional/4th Nov Social Post - Thumbnail 1.jpg">
+        </a>
+      </li>
+      <li class="carousel-panel">
+        <a href="/projects/personal/aliens-aboard">
+          <img src="/assets/thumbs/personal/Aliens Aboard - Thumbnail 1.jpg">
+        </a>
+      </li>
+    </ul>
+  </section>
   <div class="gallery">
     <div class="gallery-item">
       <a href="/projects/professional/carlis-story">

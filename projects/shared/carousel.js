@@ -3,7 +3,11 @@ const panel = document.querySelector(".carousel-panel");
 const prevButton = document.getElementById("carousel-arrow-prev");
 const nextButton = document.getElementById("carousel-arrow-next");
 
-nextButton.addEventListener("click", () => {
+nextButton.addEventListener("click", () => scrollRight());
+
+prevButton.addEventListener("click", () => scrollLeft());
+
+function scrollRight() {
   var maxScrollLeft = carousel.scrollWidth - carousel.clientWidth + 5;
   var panelWidth = panel.clientWidth;
   console.log("maxScrollLeft: " + maxScrollLeft)
@@ -14,9 +18,9 @@ nextButton.addEventListener("click", () => {
   } else {
     carousel.scrollLeft += panelWidth;
   }
-});
+}
 
-prevButton.addEventListener("click", () => {
+function scrollLeft() {
   var maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
   var panelWidth = panel.clientWidth;
   console.log("maxScrollLeft: " + maxScrollLeft)
@@ -27,4 +31,6 @@ prevButton.addEventListener("click", () => {
   } else {
     carousel.scrollLeft -= panelWidth;
   }
-});
+}
+
+setInterval(scrollRight, 10000)

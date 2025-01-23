@@ -15,6 +15,10 @@
     width: 33%;
 }
 
+.gallery {
+    justify-content: center;
+}
+
 .hand-float {
     position: relative;
     padding: 0;

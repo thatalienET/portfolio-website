@@ -9,16 +9,21 @@
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="preload" as="image" href="/assets/shared/AlexSmith_optimized.gif">
     <link rel="preload" as="style" href="/style.css">
+    <link rel="preload" as="style" href="/projects/autodesk-volker.css">
+    <link rel="preload" as="style" href="/projects/shared/carousel.css">
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects/autodesk-volker.css">
+    <link rel="stylesheet" href="/projects/shared/carousel.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap">
 
     <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
     <script src="/shared.js" async></script>
+    <script src="/projects/shared/carousel.js" async></script>
 </head>
 
 <body class="roboto-regular">
@@ -28,13 +33,13 @@
         </a>
         <!-- Navigation links -->
         <div id="topnav" class="topnav">
-            <a href="/" class="active">Home</a>
+            <a href="/">Home</a>
             <div>|</div>
             <a href="/reel">Reel</a>
             <div>|</div>
-            <a href="/professional-work">Professional Work</a>
+            <a href="/projects">Projects</a>
             <div>|</div>
-            <a href="/personal-work">Personal Work</a>
+            <a href="/playground">Playground</a>
             <div>|</div>
             <a href="/contact">Contact</a>
         </div>
@@ -54,26 +59,59 @@
         </a>
     </nav>
     <div class="project">
-        <div class="intro pink-bg fullwidth-bottom">
-            <p>
-                I am incredibly proud of this project. To create this I had to combine all the skills that I have
-                learnt into one project. Rigging the leg, editing weight maps, creating UV map's, creating gum
-                which reacts to the movement of the shoe, working with volume builders and creating my own
-                materials with displacement maps. This project is fun, colourful and feels like an expression
-                of me.
-            </p>
-        </div>
-        <iframe src="https://player.vimeo.com/video/1048311239?badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="fullscreen; picture-in-picture; clipboard-write" class="reel"
-            title="Converse Test 9"></iframe>
+        <img src="/assets/projects/autodesk-volker/Artboard 1_optimized.gif">
+
+        <iframe src="https://player.vimeo.com/video/1049726179?badge=0&autopause=0&player_id=0&app_id=58479"
+            frameborder="0" allow="fullscreen; picture-in-picture; clipboard-write" class="reel fullwidth"
+            title="Autodesk Tandem Hero Video"></iframe>
+
+        <section class="carousel-wrapper">
+            <button class="carousel-arrow" id="carousel-arrow-prev">
+                &#8249;
+            </button>
+            <button class="carousel-arrow" id="carousel-arrow-next">
+                &#8250;
+            </button>
+            <ul class="carousel" id="carousel">
+                <li class="carousel-panel">
+                    <img src="/assets/projects/autodesk-volker/SB1.jpg">
+                </li>
+                <li class="carousel-panel">
+                    <img src="/assets/projects/autodesk-volker/SB2.jpg">
+                </li>
+                <li class="carousel-panel">
+                    <img src="/assets/projects/autodesk-volker/SB3.jpg">
+                </li>
+                <li class="carousel-panel">
+                    <img src="/assets/projects/autodesk-volker/SB4.jpg">
+                </li>
+            </ul>
+        </section>
+
         <div class="gallery">
-            <img class="gallery-item gallery-slim" src="/assets/projects/converse/Screenshot 2025-01-06 at 22.09.21.png">
-            <img class="gallery-item gallery-slim" src="/assets/projects/converse/Screenshot 2025-01-19 at 14.43.01.png">
-            <img class="gallery-item gallery-slim" src="/assets/projects/converse/Screenshot 2025-01-19 at 14.46.02.png">
-            <img class="gallery-item gallery-slim" src="/assets/projects/converse/Converse Test 1_optimized.gif">
+            <div class="gallery-item gallery-slim">
+                <img
+                    src="/assets/projects/autodesk-volker/Main Comp [PROJECT NUM, CLIENT, PROJECT NAME]_2_optimized.gif">
+            </div>
+            <div class="gallery-item gallery-slim">
+                <img
+                    src="/assets/projects/autodesk-volker/Main Comp [PROJECT NUM, CLIENT, PROJECT NAME]_4_optimized.gif">
+            </div>
+            <div class="gallery-item-75 gallery-slim">
+                <img
+                    src="/assets/projects/autodesk-volker/Main Comp [PROJECT NUM, CLIENT, PROJECT NAME]_3_optimized.gif">
+            </div>
+            <div class="gallery-item gallery-slim">
+                <img
+                    src="/assets/projects/autodesk-volker/Main Comp [PROJECT NUM, CLIENT, PROJECT NAME]_1_optimized.gif">
+            </div>
+            <div class="gallery-item gallery-slim">
+                <img src="/assets/projects/autodesk-volker/Main Comp [PROJECT NUM, CLIENT, PROJECT NAME]_optimized.gif">
+            </div>
         </div>
-        <div class="thanks pink-bg">
-            <p>Thanks for scrolling!</p>
+
+        <div class="thanks">
+            <img src="/assets/projects/autodesk-volker/Artboard 1.png">
         </div>
     </div>
     <footer>

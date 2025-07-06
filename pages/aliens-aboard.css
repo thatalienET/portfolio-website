@@ -1,0 +1,54 @@
+.space-bg {
+    background-image: url("/assets/projects/aliens-aboard/Header\ BG.png");
+    background-position: center;
+    background-size: cover;
+    color: #a233da;
+    width: 100%;
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro {
+    padding: 3% 25%;
+    text-align: center;
+    font-size: 1.1vw;
+    line-height: 2vw;
+}
+
+.gallery {
+    background-image: url("/assets/projects/aliens-aboard/BG\ for\ characters.png");
+    background-position: center;
+    background-size: cover;
+    align-items: flex-start;
+    padding: 0px 20%;
+    width: 100%;
+}
+
+.custom-gallery-item {
+    width: 50%;
+    margin: 40px 0px;
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+.thanks {
+    padding: 5%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.asteroid-l {
+    margin-top: -4.5vw;
+    height: 10vw;
+    width: auto;
+    float: left;
+}
+
+.asteroid-r {
+    margin-top: -3.5vw;
+    height: 10vw;
+    width: auto;
+    float: right;
+    rotate: 180deg;
+}

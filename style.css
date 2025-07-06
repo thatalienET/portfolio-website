@@ -1,20 +1,19 @@
 /* <fonts> */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.roboto-light {
-    font-family: "Roboto", sans-serif;
+.font-light {
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
+.font-regular {
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.roboto-black {
-    font-family: "Roboto", sans-serif;
+.font-black {
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
@@ -30,7 +29,7 @@ nav {
     background: #fafafa;
     height: 180px;
     width: 100%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 300;
     font-style: normal;
     text-align: center;
@@ -264,6 +263,9 @@ body {
     background: #fafafa;
     width: 100%;
     overflow-x: hidden;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
@@ -300,6 +302,22 @@ img {
     .fullwidth-bottom {
         margin-bottom: 10px;
     }
+}
+
+.alex-face {
+    border: none;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 5vw;
+    margin-right: -100px;
+}
+
+.alex-face-text {
+    transform: rotate(-4deg);
+    float: right;
+    margin-top: 2vw;
+    margin-right: 12vw;
+    font-size: 1.5vw;
 }
 
 .background-video {
@@ -387,9 +405,23 @@ img {
 }
 
 .gallery-label {
-    padding: 10px 0px 0px 5px;
+    display: flex;
+    justify-content: right;
+    height: 2vw;
+    font-size: 1.6vw;
     font-weight: 500;
     color: #272822;
+}
+
+.website-arrow {
+    display: flex;
+    margin: 0.2vw;
+    width: 4vw;
+}
+
+.arrow-text {
+    padding: 0.05vw 1vw;
+    display: flex;
 }
 
 .reel {
@@ -484,7 +516,8 @@ img {
 }
 
 .contact {
-    font-family: "Roboto", sans-serif;
+    display: flex;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin: 40px auto 0;
@@ -493,6 +526,25 @@ img {
     line-height: 25px;
     max-width: 660px;
     width: 100%;
+}
+
+.contact-content {
+    display: flex;
+    flex: 1;
+}
+
+.arrow-left {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 4vw;
+    float: left;
+    margin-left: 5vw;
+}
+
+.arrow-left-text {
+    margin-left: 1vw;
+    padding-top: 0.3vw;
+    float: left;
 }
 
 .contact h1 {

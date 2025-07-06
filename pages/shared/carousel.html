@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="/pages/shared/carousel.css">
+    <script src="/pages/shared/carousel.js" async></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .carousel-wrapper {
+            height: 40%;
+        }
+
+        .carousel-panel {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .carousel-panel:nth-child(1) {
+            background-color: #49b293;
+        }
+
+        .carousel-panel:nth-child(2) {
+            background-color: #b03532;
+        }
+
+        .carousel-panel:nth-child(3) {
+            background-color: #6a478f;
+        }
+
+        .carousel-panel:nth-child(4) {
+            background-color: #da6f2b;
+        }
+    </style>
+</head>
+<body>
+    <section class="carousel-wrapper">
+        <button class="carousel-arrow" id="carousel-arrow-prev">
+            &#8249;
+        </button>
+        <button class="carousel-arrow" id="carousel-arrow-next">
+            &#8250;
+        </button>
+        <ul class="carousel" id="carousel">
+            <li class="carousel-panel">Test #1</li>
+            <li class="carousel-panel">Test #2</li>
+            <li class="carousel-panel">Test #3</li>
+            <li class="carousel-panel">Test #4</li>
+        </ul>
+    </section>
+</body>

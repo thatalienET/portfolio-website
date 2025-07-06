@@ -1,0 +1,33 @@
+.pink-bg {
+    background-color: #e45fff;
+    color: #eee;
+}
+
+.yellow-bg {
+    background-color: #f1d953;
+    color: #000;
+    text-shadow: 0 0 1px #666;
+}
+
+.black-bg {
+    background-color: #111;
+    color: #eee;
+}
+
+.intro {
+    padding: 5% 17%;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.text-block {
+    padding: 5% 19%;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.thanks {
+    padding: 5% 15%;
+    text-align: center;
+    font-size: 1.5vw;
+}

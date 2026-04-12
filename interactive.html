@@ -19,6 +19,7 @@
 
     <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
     <script src="/shared.js" async></script>
+    <script src="/pages/shared/rive.js"></script>
 </head>
 
 <body>
@@ -56,8 +57,20 @@
         </a>
     </nav>
     <div class="gallery">
-        <div class="gallery-item">
-
+        <div class="gallery-item-33 gallery-item-flex">
+            <canvas id="canvas-1" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item-33 gallery-item-flex">
+            <canvas id="canvas-2" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item-33 gallery-item-flex">
+            <canvas id="canvas-3" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-4" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-5" width="600" height="600" class="rive"></canvas>
         </div>
     </div>
     <footer>
@@ -75,5 +88,37 @@
         </div>
     </footer>
 </body>
+<script>
+  var riveInstaces = [];
+  var canvasId = 1;
 
+  function fillRiveCanvas(name, stateMachine, artboard) {
+    const canvas = document.getElementById("canvas-" + canvasId);
+    const r = new rive.Rive({
+      src: "/assets/interactive/" + name + ".riv",
+      canvas: canvas,
+      stateMachines: stateMachine || decodeURIComponent("State%20Machine%201"),
+      autoplay: false,
+      onLoad: () => {
+        r.resizeDrawingSurfaceToCanvas();
+        r.play();
+      },
+    });
+    // canvas.addEventListener("mouseover", () => r.play());
+    riveInstaces.push(r);
+    canvasId = canvasId + 1;
+  }
+
+  fillRiveCanvas("icons V2");
+  fillRiveCanvas("cancer!");
+  fillRiveCanvas("Aliens Aboard_v8");
+  fillRiveCanvas("my_interactive_face");
+  fillRiveCanvas("messy_files_v4.2");
+
+  window.addEventListener("resize", () => {
+    riveInstaces.forEach((r) => {
+        r.resizeDrawingSurfaceToCanvas();
+    });
+  });
+</script>
 </html>

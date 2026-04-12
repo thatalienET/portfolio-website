@@ -13,7 +13,6 @@
   <link rel="preload" as="image" href="/assets/shared/AlexSmith_optimized.gif">
   <link rel="preload" as="style" href="/style.css">
   <link rel="preload" as="style" href="/pages/shared/carousel.css">
-  <link rel="preload" as="style" href="https://unpkg.com/@rive-app/canvas@2.17.3">
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +25,7 @@
   <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
   <script src="/shared.js" async></script>
   <script src="/pages/shared/carousel.js" async></script>
-  <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+  <script src="/pages/shared/rive.js"></script>
 </head>
 
 <body>
@@ -64,7 +63,7 @@
     </a>
   </nav>
   <div>
-    <canvas id="canvas" class="alex-face"></canvas>
+    <canvas id="canvas-1" class="alex-face"></canvas>
   </div>
   <div class="fullwidth-bottom">
     <a href="/reel" style="display : block;">
@@ -145,19 +144,28 @@
   </footer>
 </body>
 <script>
-  const artboard = decodeURIComponent("Artboard");
-  const animation = decodeURIComponent("State%20Machine%201");
-  const r = new rive.Rive({
-         src: "/assets/interactive/my_interactive_face_V2.riv",
-         // OR the path to a discoverable and public Rive asset
-         // src: '/public/example.riv',
-         canvas: document.getElementById("canvas"),
-         autoplay: true,
-         autoBind: true,
-         artboard: artboard,
-         stateMachines: animation,
-         onLoad: () => {
-           r.resizeDrawingSurfaceToCanvas();
-         },
-     }); </script>
+  var riveInstaces = [];
+  var canvasId = 1;
+
+  function fillRiveCanvas(name, stateMachine) {
+    const r = new rive.Rive({
+      src: "/assets/interactive/" + name + ".riv",
+      canvas: document.getElementById("canvas-" + canvasId),
+      stateMachines: stateMachine || decodeURIComponent("State%20Machine%201"),
+      onLoad: () => {
+        r.resizeDrawingSurfaceToCanvas();
+      },
+    });
+    riveInstaces.push(r);
+    canvasId = canvasId + 1;
+  }
+
+  fillRiveCanvas("my_interactive_face_V3");
+
+  window.addEventListener("resize", () => {
+    riveInstaces.forEach((r) => {
+        r.resizeDrawingSurfaceToCanvas();
+    });
+  });
+</script>
 </html>

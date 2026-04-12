@@ -10,9 +10,9 @@ prevButton.addEventListener("click", () => scrollLeft());
 function scrollRight() {
   var maxScrollLeft = carousel.scrollWidth - carousel.clientWidth + 5;
   var panelWidth = panel.clientWidth;
-  console.log("maxScrollLeft: " + maxScrollLeft)
-  console.log("carousel.scrollLeft: " + carousel.scrollLeft)
-  console.log("panelWidth: " + panelWidth)
+  // console.log("maxScrollLeft: " + maxScrollLeft)
+  // console.log("carousel.scrollLeft: " + carousel.scrollLeft)
+  // console.log("panelWidth: " + panelWidth)
   if (maxScrollLeft < carousel.scrollLeft + panelWidth) {
     carousel.scrollLeft -= maxScrollLeft;
   } else {
@@ -23,9 +23,9 @@ function scrollRight() {
 function scrollLeft() {
   var maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
   var panelWidth = panel.clientWidth;
-  console.log("maxScrollLeft: " + maxScrollLeft)
-  console.log("carousel.scrollLeft: " + carousel.scrollLeft)
-  console.log("panelWidth: " + panelWidth)
+  // console.log("maxScrollLeft: " + maxScrollLeft)
+  // console.log("carousel.scrollLeft: " + carousel.scrollLeft)
+  // console.log("panelWidth: " + panelWidth)
   if (0 == carousel.scrollLeft) {
     carousel.scrollLeft += maxScrollLeft;
   } else {

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Smith Designs Animation</title>
+    <meta name="description" content="Alex Smith Designs Embedded Rive Animation">
+    <link rel="preload" as="script" href="/pages/shared/rive.js">
+    <script src="/pages/shared/rive.js"></script>
+    <style type="text/css">
+        html,
+        body,
+        div {
+            margin: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: transparent;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script>
+
+        class FakeResizeObserver {
+            observe() { }
+            unobserve() { }
+            disconnect() { }
+        }
+
+        const MyResizeObserver = ResizeObserver || FakeResizeObserver;
+
+        const fileParam = /[&?]file=([^&]+)/.exec(location.search);
+        const startParam = /[&?]start=([^&]+)/.exec(location.search);
+        const startMode = startParam ? startParam[1] : "auto";
+        const widthParam = /[&?]width=([^&]+)/.exec(location.search);
+        const heightParam = /[&?]height=([^&]+)/.exec(location.search);
+        const width = widthParam ? parseInt(widthParam[1]) : 0;
+        const height = heightParam ? parseInt(heightParam[1]) : 0;
+        const fileAspectRatio = width / height || 0;
+        const stateMachineParam = /[&?]state-machine=([^&]+)/.exec(location.search);
+        const stateMachine = stateMachineParam ? stateMachineParam[1] : "State Machine 1";
+
+        var riveAnimation;
+
+        if (!fileParam || !fileParam[1]) {
+            console.error("No file parameter provided");
+        } else {
+            const canvas = document.getElementById("canvas");
+            riveAnimation = new rive.Rive({
+                src: "/assets/interactive/" + fileParam[1] + ".riv",
+                canvas: canvas,
+                stateMachines: stateMachine,
+                autoplay: startMode === "auto",
+                onLoad: () => {
+                    riveAnimation.resizeDrawingSurfaceToCanvas();
+                },
+            });
+            switch (startMode) {
+                case "hover":
+                    canvas.addEventListener("mouseover", () => riveAnimation.play());
+                    break;
+                case "click":
+                    canvas.addEventListener("click", () => riveAnimation.play());
+            }
+
+        }
+
+        function throttle(f, delay) {
+            let timer = 0;
+            return function (...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => f.apply(this, args), delay);
+            };
+        }
+
+        const resizeObserver = new MyResizeObserver(
+            throttle((entries) => {
+                let displayWidth = window.innerWidth;
+                let displayHeight = window.innerHeight;
+
+                if (fileAspectRatio > 0) {
+                    console.log("fileAspectRatio > 0");
+                    const displayAspectRatio = displayWidth / displayHeight;
+                    if (fileAspectRatio > displayAspectRatio) {
+                        displayHeight = displayWidth / fileAspectRatio;
+                    } else {
+                        displayWidth = displayHeight * fileAspectRatio;
+                    }
+                }
+
+                const dpr = Math.min(2, window.devicePixelRatio || 1);
+
+                canvas.width = dpr * displayWidth;
+                canvas.height = dpr * displayHeight;
+                canvas.style.width = displayWidth + "px";
+                canvas.style.height = displayHeight + "px";
+
+                riveAnimation.startRendering();
+                riveAnimation.resizeToCanvas();
+            }, 50),
+        );
+        resizeObserver.observe(container);
+    </script>
+</body>
+
+</html>

@@ -399,7 +399,7 @@ img {
     width: 20%;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1730px) {
 
     .gallery-interactive {
         padding: 0 6vw;

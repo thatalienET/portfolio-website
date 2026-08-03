@@ -19,7 +19,8 @@
 
     <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
     <script src="/shared.js" async></script>
-    <script src="/pages/shared/rive.js"></script>
+    <link rel="preload" as="script" href="https://unpkg.com/@rive-app/webgl2@2">
+    <script src="https://unpkg.com/@rive-app/webgl2@2"></script>
 </head>
 
 <body>
@@ -59,14 +60,14 @@
             <i class="fa fa-bars fa-2x"></i>
         </a>
     </nav>
-    <div class="gallery">
-        <div class="gallery-item-33 gallery-item-flex">
+    <div class="gallery" style="padding: 0px 25%;">
+        <div class="gallery-item gallery-item-flex">
             <canvas id="canvas-1" width="600" height="600" class="rive"></canvas>
         </div>
-        <div class="gallery-item-33 gallery-item-flex">
+        <div class="gallery-item gallery-item-flex">
             <canvas id="canvas-2" width="600" height="600" class="rive"></canvas>
         </div>
-        <div class="gallery-item-33 gallery-item-flex">
+        <div class="gallery-item gallery-item-flex">
             <canvas id="canvas-3" width="600" height="600" class="rive"></canvas>
         </div>
         <div class="gallery-item gallery-item-flex">
@@ -74,6 +75,21 @@
         </div>
         <div class="gallery-item gallery-item-flex">
             <canvas id="canvas-5" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-6" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-7" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-8" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-9" width="600" height="600" class="rive"></canvas>
+        </div>
+        <div class="gallery-item gallery-item-flex">
+            <canvas id="canvas-10" width="600" height="600" class="rive"></canvas>
         </div>
     </div>
     <footer>
@@ -103,20 +119,27 @@
     const r = new rive.Rive({
       src: "/assets/interactive/" + name + ".riv",
       canvas: canvas,
-      stateMachines: stateMachine || decodeURIComponent("State%20Machine%201"),
+      stateMachines: stateMachine || "State Machine 1",
       autoplay: false,
+      autoBind: true,
+      useOffscreenRenderer: true,
       onLoad: () => {
         r.resizeDrawingSurfaceToCanvas();
-        r.play();
       },
     });
-    // canvas.addEventListener("mouseover", () => r.play());
+    canvas.addEventListener("mouseover", () => r.play());
     riveInstaces.push(r);
     canvasId = canvasId + 1;
   }
 
-  fillRiveCanvas("cancer!");
+  fillRiveCanvas("phantompopsV3");
+  fillRiveCanvas("dynamic_toolkit_uv_index_v5");
+  fillRiveCanvas("dragon");
+  fillRiveCanvas("lung_cancer");
+  fillRiveCanvas("bone_cancer");
+  fillRiveCanvas("breast_cancer_v2");
   fillRiveCanvas("Aliens Aboard_v8");
+  fillRiveCanvas("icons_v3");
   fillRiveCanvas("my_interactive_face");
   fillRiveCanvas("messy_files_v4.2");
 

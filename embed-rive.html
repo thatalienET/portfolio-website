@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Smith Designs Animation</title>
     <meta name="description" content="Alex Smith Designs Embedded Rive Animation">
-    <link rel="preload" as="script" href="/pages/shared/rive.js">
-    <script src="/pages/shared/rive.js"></script>
+    <link rel="preload" as="script" href="https://unpkg.com/@rive-app/webgl2@2">
+    <script src="https://unpkg.com/@rive-app/webgl2@2"></script>
     <style type="text/css">
         html,
         body,
@@ -54,7 +54,11 @@
         const height = heightParam ? parseInt(heightParam[1]) : 0;
         const fileAspectRatio = width / height || 0;
         const stateMachineParam = /[&?]state-machine=([^&]+)/.exec(location.search);
-        const stateMachine = stateMachineParam ? stateMachineParam[1] : "State Machine 1";
+        const stateMachine = stateMachineParam ? stateMachineParam[1] : "State%20Machine%201";
+        const stateMachineDecoded = decodeURI(stateMachine);
+        const artboardParam = /[&?]artboard=([^&]+)/.exec(location.search);
+        const artboard = artboardParam ? artboardParam[1] : ""; // default artboard
+        const artboardDecoded = decodeURI(artboard);
 
         var riveAnimation;
 
@@ -65,8 +69,10 @@
             riveAnimation = new rive.Rive({
                 src: "/assets/interactive/" + fileParam[1] + ".riv",
                 canvas: canvas,
-                stateMachines: stateMachine,
+                stateMachines: stateMachineDecoded,
+                artboard: artboardDecoded,
                 autoplay: startMode === "auto",
+                autoBind: true,
                 onLoad: () => {
                     riveAnimation.resizeDrawingSurfaceToCanvas();
                 },

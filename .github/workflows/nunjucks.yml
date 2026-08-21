@@ -3,7 +3,7 @@ name: Nunjucks to HTML & GitHub Pages Deployment
 on:
   push:
     branches:
-      - development
+      - main
 
 jobs:
   build-and-deploy:

@@ -1,0 +1,76 @@
+{% extends "../layout.njk" %}
+{% block headStylesheets %}
+<link rel="preload" as="style" href="/pages/phantom-pops.css">
+<link rel="stylesheet" href="/pages/phantom-pops.css">
+{% endblock %}
+{% block content %}
+<img src="/assets/projects/phantom-pops/Banner.png" style="padding: 1vw 3vw;">
+
+<div class="phantom-wrapper">
+    <img src="/assets/projects/phantom-pops/phantom_pops.gif" style="padding: 3vw;">
+    <div class="gallery">
+        <div class="gallery-item-40">
+            <h2>Overview</h2>
+            <p>
+                As part of a collaboration with brand
+                designer Skojie, I created a
+                collection of motion assets for the
+                concept brand Phantom Pops. We
+                were looking for a wany to stand out
+                against other candy brands, and so
+                devised a stratagy that made easy
+                for both kids and young adults to
+                connect with the brand. Childeren,
+                through the interactive animation
+                which encourages play and a
+                deeper connection to the flavour
+                mascots. Young Adults through
+                social formats, and overall nostalgic
+                retro aesthetic in the TV ad.
+            </p>
+        </div>
+        <div class="gallery-item-60">
+            <img src="/assets/projects/phantom-pops/Insta_Story_2.gif">
+            <img src="/assets/projects/phantom-pops/Insta_Story_1.gif">
+        </div>
+    </div>
+    <canvas id="canvas-2" width="600" height="150"></canvas>
+    <div class="phantom-text">
+        <h2>Making of Videos</h2>
+        <p>Below I have documented the how and why of these brand animations. Throughout</p>
+        <p>each video, I explored the problems I was facing, how I approached the project and</p>
+        <p>what learnt along the way. I also dive into the technical aspects, giving an insight into my</p>
+        <p>methods and decision making.</p>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item-33">
+            <iframe src="https://player.vimeo.com/video/1219681892?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen;" title="Part 1"></iframe>
+        </div>
+        <div class="gallery-item-33">
+            <iframe src="https://player.vimeo.com/video/1219681890?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen;" title="Part 1"></iframe>
+        </div>
+        <div class="gallery-item-33">
+            <iframe src="https://player.vimeo.com/video/1219681891?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen;" title="Part 1"></iframe>
+        </div>
+        <div class="gallery-item-33">
+            <iframe src="https://player.vimeo.com/video/1219681889?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen;" title="Part 1"></iframe>
+        </div>
+        <div class="gallery-item-33">
+            <iframe src="https://player.vimeo.com/video/1219681916?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen;" title="Part 1"></iframe>
+        </div>
+    </div>
+    <div class="phantom-text">
+        <h2>Credits</h2>
+        <p>Brand Design: Skojie K</p>
+        <p>Motion Design: Alex Smith (Me!)</p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% set riveInstances = [ "phantom_pops_V4" ] %}

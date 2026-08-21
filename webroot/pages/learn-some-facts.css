@@ -1,0 +1,137 @@
+.head-banner p {
+    padding: 2vw;
+    color: #F8EFE3;
+    margin-top: -12vw;
+    font-size: 1.9vw;
+}
+
+.top-gallery {
+    padding: 2vw 7vw 0;
+}
+
+.gallery {
+    justify-content: center;
+    padding-left: 11vw;
+    padding-right: 11vw;
+}
+
+.gallery-item {
+    margin: 2vw 0;
+    padding: 0 2vw;
+    font-size: 1.3vw;
+}
+
+.gallery-item canvas {
+    margin: auto;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+    overflow: visible;
+}
+
+.starting-point {
+    font-size: calc(4vw + 10px);
+    margin-bottom: 1vw;
+}
+
+.paper-tag {
+    position: relative;
+    width: 40%;
+    z-index: 1000;
+    left: -11vw;
+    top: -30vw;
+}
+
+.yellow-svg {
+    z-index: 1;
+    margin-top: 3vw;
+    font-size: 30px;
+}
+
+.yellow-svg path {
+    fill: #f3ce44;
+}
+
+.wrap {
+    padding: 1vw 8vw;
+}
+
+.black-svg {
+    padding: 0 5%;
+    fill: #191a1a;
+}
+
+.visual-direction {
+    color: #F8EFE3;
+    position: relative;
+    top: -77vw;
+    font-size: 1.3vw;
+    margin-bottom: -65vw;
+}
+
+.visual-direction h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-item-25 {
+    padding: 0 1vw;
+    margin-top: 1.5vw;
+}
+
+.building-it {
+    position: relative;
+    z-index: 1000;
+    width: 25%;
+    left: 6%;
+    top: 2vw
+}
+
+.building-it-text {
+    font-size: 1.5vw;
+}
+
+#triggers-and-booleans {
+    margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 800px) {
+
+    .top-gallery .text-center {
+        margin-bottom: -8vw;
+    }
+
+    .starting-point {
+        margin-bottom: 6vw;
+    }
+
+    .paper-tag {
+        left: -24vw;
+        top: -63vw;
+    }
+
+    .black-svg {
+        display: none;
+    }
+
+    .visual-direction {
+        margin: 50px 0 20px;
+        padding-top: 50px;
+        position: unset;
+        background-color: #191a1a;
+        font-size: 2vw;
+    }
+    
+    .building-it {
+        width: 40%;
+        left: 3%;
+    }
+
+    .building-it-text {
+        padding: 10px 0vw;
+        font-size: calc(1vw + 10px);
+    }
+}

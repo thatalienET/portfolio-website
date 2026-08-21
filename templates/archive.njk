@@ -1,0 +1,37 @@
+{% extends "./layout.njk" %}
+{% set activeNav = 0 %}
+{% block content %}
+{% set galleryItems = [
+  {
+    link: 'archive/booking-com',
+    thumb: 'archive/Booking.com - Thumbnail 1.jpg',
+    label: 'Booking.com - E-Learning Demo Video'
+  },
+  {
+    link: 'archive/autodesk-volker',
+    thumb: 'archive/Autodesk Doodly - Thumbnail 1.jpg',
+    label: 'Autodesk - Volker Wessels'
+  },
+  {
+    link: 'archive/panasonic',
+    thumb: 'archive/Panasonic - Thumbnail 1.jpg',
+    label: 'Panasonic - Website Highlight'
+  },
+  {
+    link: 'archive/autodesk-hero',
+    thumb: 'archive/Autodesk Hero Vid - Thumbnail 1.jpg',
+    label: 'Autodesk - Website Hero Video'
+  },
+  {
+    link: 'archive/microplastics',
+    thumb: 'archive/Microplastics in Malaysia - Thumbnail 1.jpg',
+    label: 'GCRF - Microplastic Pollution with Dr Andrewsn'
+  },
+  {
+    link: 'archive/adobe',
+    thumb: 'archive/Happy Keli - Thumbnail 1.jpg',
+    label: 'Adobe - Happy Keli'
+  }
+] %}
+{% include "./shards/gallery.njk" %}
+{% endblock %}

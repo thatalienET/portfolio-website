@@ -1,0 +1,12 @@
+<div class="gallery">
+    {% for item in galleryItems %}
+    <div class="gallery-item">
+        <a href="/pages/{{ item.link }}">
+            <img aria-label="{{ item.label }}" src="/assets/thumbs/{{ item.thumb }}" loading="lazy">
+            <div class="gallery-label">
+                <span class="label-text">{{ item.label }}</span>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

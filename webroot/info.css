@@ -1,0 +1,150 @@
+/* Info Section */
+
+.info-left {
+    width: 70%;
+    padding: 50px 0 0 7vw;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3.7vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.info-left ul {
+    margin-left: 2.2vw;
+}
+
+.bullet {
+    width: 2.5vw;
+    margin-left: -3vw;
+}
+
+.info-left ul li {
+    line-height: 2.8vw;
+    font-size: 2.1vw;
+}
+
+.info-right {
+    display: inline-block;
+    width: 23%;
+}
+
+.info-right-pod {
+    display: inline-block;
+}
+
+.info-right-pod div {
+    font-size: 1.8vw;
+}
+
+.get-in-touch {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.3vw;
+}
+
+.get-in-touch a {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.socials {
+    padding: 45px 1vw 0 1vw;
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+.socials span {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.social-link {
+    color: #272822;
+    margin: 0 35px;
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+
+.nice-people {
+    background-color: #AB1447;
+    color: #F8EFE3;
+    width: 100%;
+    text-align: center;
+    padding: 2vw;
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 3.7vw;
+}
+
+.drip {
+    fill: #AB1447;
+}
+
+.test1 {
+    fill: #ffbe00;
+    width: 60%;
+    margin: 1vw 0 -5vw 10vw;
+}
+
+.test1mob, .test2mob {
+    display: none;
+}
+
+.test2 {
+    fill: #cc5;
+    width: 60%;
+    margin-left: 30vw;
+}
+
+.svg-text {
+    fill: #1a1a1a;
+    font-size: 47px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+
+    .info-left {
+        width: 100%;
+        padding: 50px 22vw;
+    }
+
+    .info-right {
+        width: 100%;
+        padding: 0 15vw;
+    }
+
+    .info-right-pod {
+        padding: 0 7vw;
+    }
+
+    .test1, .test2 {
+        display: none;
+    }
+
+    .test1mob {
+        margin-top: -5vw;
+        padding: 8vw 7vw 5vw;
+        text-align: center;
+        width: 100%;
+        display: block;
+        background-color: #ffbe00;
+    }
+
+    .test2mob {
+        padding: 5vw 7vw;
+        text-align: center;
+        width: 100%;
+        display: block;
+        background-color: #cc5;
+    }
+}

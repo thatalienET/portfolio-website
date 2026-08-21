@@ -1,1 +1,7 @@
 plans/
+node_modules/
+.vscode/
+legacy/
+
+# WEBROOT EXCLUDE HTML FOR DYNAMIC BUILD
+webroot/**/*.html

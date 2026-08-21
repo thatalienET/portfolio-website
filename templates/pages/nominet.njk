@@ -1,0 +1,36 @@
+{% extends "../layout.njk" %}
+{% block content %}
+<div class="project">
+    <img src="/assets/projects/nominet/Nominet Intro.png">
+    <iframe src="https://player.vimeo.com/video/1037239712?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0"
+        allow="fullscreen; picture-in-picture; clipboard-write" title="Nominet TV Ad"></iframe>
+
+    <section class="carousel-wrapper">
+        <button class="carousel-arrow" id="carousel-arrow-prev">
+            &#8249;
+        </button>
+        <button class="carousel-arrow" id="carousel-arrow-next">
+            &#8250;
+        </button>
+        <ul class="carousel" id="carousel">
+            <li class="carousel-panel">
+                <img src="/assets/projects/nominet/Storyboards/SB1.png">
+            </li>
+            <li class="carousel-panel">
+                <img src="/assets/projects/nominet/Storyboards/SB2.png">
+            </li>
+            <li class="carousel-panel">
+                <img src="/assets/projects/nominet/Storyboards/SB3.png">
+            </li>
+        </ul>
+    </section>
+    <div class="gallery fullwidth">
+        <div class="gallery-item">
+            <img src="/assets/projects/nominet/Nominet TV Ad_Final_optimized.gif">
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/projects/nominet/Nominet TV Ad_Final_1_optimized.gif">
+        </div>
+    </div>
+</div>
+{% endblock %}

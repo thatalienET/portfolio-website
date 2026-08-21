@@ -1,0 +1,171 @@
+/* TOP TEXT */
+
+.top-text-wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 1270px;
+    margin: auto;
+}
+
+.top-text-title {
+    font-size: calc(25px + 2.4vw);
+    color: #AB1447;
+}
+
+.top-text-body {
+    padding-top: 20px;
+    font-size: calc(13px + 0.7vw);
+}
+
+strong {
+    color: #AB1447;
+}
+
+@media screen and (max-width: 800px) {
+    /* Mobile view */
+
+    .top-text-wrapper {
+        width: 92%;
+    }
+
+    .top-text-body br {
+        display: none;
+    }
+
+}
+
+/* SHOWREEL */
+
+.showreel-wrapper {
+    background-color: #AB1447;
+    width: 100%;
+    margin-top: 80px;
+    padding: 1vw 5vw;
+}
+
+.showreel-video {
+    pointer-events: none;
+}
+
+.showreel-drip {
+    fill: #AB1447;
+}
+
+/* FEATURED WORK */
+
+.featured-title {
+    text-align: center;
+    width: 100%;
+    font-size: calc(20px + 5vw);
+    margin: 15px;
+}
+
+.featured-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.featured-svg-left {
+    width: 33%;
+    min-width: 20vw;
+    overflow: visible;
+    z-index: 100;
+    padding: 0 calc(4vw - 50px) 0 6.5vw;
+}
+
+.featured-svg-right {
+    width: 33%;
+    min-width: 20vw;
+    overflow: visible;
+    z-index: 100;
+    padding: 0 6.5vw 0 calc(4vw - 50px);
+    margin-left: -20vw;
+}
+
+.gallery-item svg rect {
+    z-index: 500;
+    position: relative;
+}
+
+.featured-svg {
+    width: 140%;
+}
+
+.featured-svg-line {
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+.light-fill {
+    fill: #F8EFE3;
+    color: #F8EFE3;
+}
+
+.dark-fill {
+    fill: #1A1A1A;
+    color: #1A1A1A;
+}
+
+.featured-svg-header {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
+}
+
+.featured-svg-subheader {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 47px;
+}
+
+
+.featured-svg-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.featured-gif {
+    width: 66%;
+    z-index: 1;
+}
+
+.featured-responsive-text {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .featured-wrapper {
+        width: 100%;
+    }
+
+    .featured-svg-left, .featured-svg-right  {
+        display: none;
+    }
+
+    .featured-gif {
+        width: 100%;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .featured-responsive-text {
+        width: 100%;
+        display: initial;
+        text-align: center;
+        padding: 5%;
+    }
+
+
+}
+
+

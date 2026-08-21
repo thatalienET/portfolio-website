@@ -1,0 +1,37 @@
+.phantom-wrapper {
+    background-color: #1a1a1a;
+    color: #F8EFE3;
+    margin: 0 3vw;
+    border-radius: 35px;
+    font-size: 1.8vw;
+}
+
+.gallery-item-40 {
+    padding: 0 0 0 8vw;
+}
+
+.gallery-item-40 h2 {
+    font-size: 3vw;
+}
+
+.gallery {
+    justify-content: center;
+}
+
+.gallery-item-60 img {
+    width: 48%;
+}
+
+.phantom-wrapper canvas {
+    margin: 2vw 4vw;
+    width: 91.5%;
+}
+
+.phantom-text {
+    text-align: center;
+    padding: 2vw 6vw 4vw;
+}
+
+.gallery-item-33 {
+    margin: -60px 0;
+}

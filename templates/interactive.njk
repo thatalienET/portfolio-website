@@ -1,0 +1,26 @@
+{% extends "./layout.njk" %}
+{% set activeNav = 3 %}
+{% block content %}
+<div class="gallery gallery-interactive">
+    <div class="gallery-item-flex-l">
+        <canvas id="canvas-2" width="1200" height="600" class="rive"></canvas>
+    </div>
+    {% for i in range(3, 12) -%}
+    <div class="gallery-item-flex">
+        <canvas id="canvas-{{ i }}" width="600" height="600" class="rive"></canvas>
+    </div>
+    {%- endfor %}
+</div>
+{% endblock %}
+{% set riveInstances = [
+  "phantom_pops_V4",
+  "dynamic_toolkit_uv_index_v5",
+  "dragon",
+  "lung_cancer",
+  "bone_cancer",
+  "breast_cancer_v2",
+  "Aliens Aboard_v8",
+  "icons_v3",
+  "my_interactive_face",
+  "messy_files_v4.2"
+    ] %}

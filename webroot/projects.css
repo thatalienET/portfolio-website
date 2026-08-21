@@ -1,0 +1,39 @@
+.gallery-item {
+    margin: 1vw 0;
+}
+
+.playground {
+    width: 100%;
+    height: 20vw;
+}
+
+.playground-text {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 64px;
+    fill: #AB1447;
+}
+
+.playground-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 7vw;
+}
+
+.playground-gallery-column {
+    width: 50%;
+}
+
+.playground-gallery-item {
+    width: 100%;
+    padding: 1vw 1vw;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+
+    .playground-gallery-column {
+        width: 100%;
+    }
+}

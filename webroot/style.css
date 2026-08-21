@@ -77,20 +77,20 @@ nav {
     float: left;
     color: #AB1447;
     text-decoration: none;
+    border-radius: 45px;
     padding: 0.2vw 1vw;
     display: block;
     text-align: center;
 }
 
 .topnav a.active {
-    border-radius: 45px;
     background-color: #115F5E;
     color: #CCCC55;
 }
 
 .topnav a:hover {
-    border: 3px solid #272822;
-    border-radius: 45px;
+    background-color: #115F5E;
+    color: #CCCC55;
     transition: ease;
     transition-duration: 15ms;
 }
@@ -109,7 +109,7 @@ i[class^="fa-"] {
 
 .links {
     position: absolute;
-    right: 0;
+    right: 1vw;
     top: 0;
     margin-top: calc(60px + 0.7vw);
     margin-right: 1vw;
@@ -180,6 +180,7 @@ i[class^="fa-"] {
     .menu-icon {
         display: block;
         position: absolute;
+        color: #1A1A1A;
         right: 0;
         top: 0;
         margin-top: calc(25px - 0.5vw);

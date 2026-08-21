@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>Alex Smith Designs</title>
+    <meta name=description content="Alex Smith Motion Designer Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- 
+        <meta http-equiv="refresh" content="0; url=https://alexsmithdesigns.uk/under-construction" />
+    -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preload" as="style" href="/style.css">
+    <link rel="preload" as="style" href="/pages/shared/carousel.css">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap">
+    <link rel="preload" as="script" href="https://unpkg.com/@rive-app/webgl2@2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/pages/shared/carousel.css">
+    
+<link rel="preload" as="style" href="/pages/learn-some-facts.css">
+<link rel="stylesheet" href="/pages/learn-some-facts.css">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
+    <script src="/shared.js" async></script>
+    <script src="/pages/shared/carousel.js" async></script>
+    <script src="https://unpkg.com/@rive-app/webgl2@2"></script>
+    
+    <!-- Add extra scripts here if needed -->
+    
+</head>
+
+<body>
+    <nav>
+        <a href="/" aria-label="face-logo home link" class="logo-wrapper">
+            <canvas id="canvas-1" class="logo" aria-label="alex-face"></canvas>
+        </a>
+        <!-- Navigation links -->
+        
+        <div id="topnav" class="topnav">
+            <a href="/" >HOME</a>
+            <a href="/projects" >PROJECTS</a>
+            <a href="/interactive" >INTERACTIVE</a>
+            <a href="/info" >INFO</a>
+        </div>
+        
+        <div class="links">
+            <a class="links-item" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
+                <i aria-label="instagram" class="fa-brands fa-instagram fa-sm"></i>
+            </a>
+            <a class="links-item" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
+                <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-sm"></i>
+            </a>
+            <a class="links-item" aria-label="tiktok" href="https://www.tiktok.com/@alex.smith.motiondesign">
+                <i aria-label="tiktok" class="fa-brands fa-tiktok fa-sm"></i>
+            </a>
+        </div>
+        <a href="#" rel="nofollow" aria-label="menu-icon" class="menu-icon" onclick="menuControl()">
+            <i aria-label="menu-icon" class="fa fa-bars fa-2xs"></i>
+        </a>
+    </nav>
+    <svg viewBox="0 0 600 30" class="banner-drip">
+        <path d="M0,10 C100,30 200,0 300,10 C350,15 500,30 600,10  L600,00 L0,00 Z"></path>
+    </svg>
+
+    
+<div class="text-center wrap head-banner">
+    <img src="/assets/projects/learn-some-facts/Learn Some Facts - Banner.png">
+    <p>
+        What happens when medical information becomes something you can explore? This project
+        uses visual and interactive elements to explore a subject that can often feel quite clinical and
+        difficult to take in. Have a play below, and then scroll down to see my how and why.
+    </p>
+</div>
+<div class="gallery top-gallery">
+    <div class="gallery-item">
+        <canvas id="canvas-2" width="300" height="300"></canvas>
+    </div>
+    <div class="gallery-item">
+        <canvas id="canvas-3" width="300" height="300"></canvas>
+    </div>
+    <div class="gallery-item">
+        <canvas id="canvas-4" width="300" height="300"></canvas>
+    </div>
+    <div class="gallery-item text-center">
+        <h2 class="starting-point">The Starting Point</h2>
+        <svg class="yellow-svg" viewBox="0 0 938.22 708.35">
+            <path d="M922,708c-288.6-2.5-577-5-865-7.5C37,478,18,256,0,33,312,22,625,11,938,0c-5,236-10,472-15,708Z" />
+            <text x="100" y="100">When my mother was diagnosed with breast cancer, we</text>
+            <text x="100" y="130">were overwhelmed, stressed and, honestly, just sad.</text>
+            <text x="100" y="190">There's a seemingly endless supply of information and</text>
+            <text x="100" y="220">people willing to help, but I found a lot of that information</text>
+            <text x="100" y="250">difficult to take in. I was also surprised by how little I knew</text>
+            <text x="100" y="280">about something that affects so many people.</text>
+            <text x="100" y="340">Cancer isn't exactly a topic people want to explore until</text>
+            <text x="100" y="370">they have a reason to. So I wanted to take something</text>
+            <text x="100" y="400">quite serious and information-heavy and make it feel a</text>
+            <text x="100" y="430">little more engaging. Rather than presenting the</text>
+            <text x="100" y="460">information as a traditional article or infographic, I wanted</text>
+            <text x="100" y="490">to create something that encouraged people to explore,</text>
+            <text x="100" y="520">discover and learn at their own pace.</text>
+        </svg>
+        <img src="/assets/projects/learn-some-facts/What problem was i trying to solve.png" class="paper-tag">
+    </div>
+</div>
+<div class="text-center wrap">
+    <h2>The Idea</h2>
+    <br />
+    <p>
+        So, one of the things that makes cancer frightening is that you often don't know it's there.
+        <br /><br />
+        Some cancers can develop without obvious symptoms, which is why things like regular checks and screening can be
+        so important. I started thinking about this idea of something being hidden beneath the surface. That led to the
+        main
+        interaction: I wanted the user to have to search for the cancer.
+        <br /><br />
+        Rather than immediately showing the user where the cancer was, I made them explore the body using an x-ray. As
+        the
+        cursor moves around, the inside of the body is gradually revealed. Eventually, the user will discover the
+        brightly
+        coloured cancer hidden within it.
+    </p>
+</div>
+
+<svg viewBox="0 0 2248.11 1988.17" class="black-svg">
+    <path
+        d="M2248.11,1988.17c-749.37-19.75-1498.74-39.5-2248.11-59.25C22.17,1301.19,44.34,673.46,66.51,45.73,774.61,30.49,1482.71,15.24,2190.81,0c19.1,662.72,38.2,1325.44,57.3,1988.17Z" />
+</svg>
+
+<div class="wrap visual-direction gallery">
+    <div class="gallery-item-60">
+        <h2>Visual Direction</h2><br />
+        <p>
+            I knew quite early on that I didn't want this to look like a typical medical
+            website.
+        </p><br />
+        <p>
+            A lot of medical information is presented in a very clean, clinical way,
+            which makes sense, but I wanted to create something that felt a little
+            more human and inviting. The subject is already quite heavy, so I
+            wanted the visual style to encourage people to explore it rather than
+            making it feel even more intimidating.
+        </p><br />
+        <p>
+            I started playing with collage, torn paper, halftone textures and bold
+            vector illustrations. The bright yellows, pinks and blues give the pages
+            a sense of energy, while the darker x-ray imagery creates a strong
+            contrast and keeps bringing the user back to the idea of looking
+            beneath the surface.
+        </p><br />
+        <p>
+            The colour also became a useful way of highlighting the important parts
+            of the interaction. Against the muted x-ray, the cancer immediately
+            stands out, making it feel like something you've discovered.
+        </p><br />
+        <p>
+            Although each cancer has its own layout and colour emphasis, I kept
+            the same visual ingredients throughout. This gave me enough freedom
+            to make each page feel different, while still making it obvious that they
+            belong to the same project.
+        </p>
+    </div>
+    <div class="gallery-item-40">
+        <img src="/assets/projects/learn-some-facts/Moodboard.png">
+        <img src="/assets/projects/learn-some-facts/Colour Pallet.png">
+    </div>
+    <div class="gallery-item-25">
+        <img src="/assets/projects/learn-some-facts/lungs.png">
+    </div>
+    <div class="gallery-item-25">
+        <img src="/assets/projects/learn-some-facts/type1.png">
+    </div>
+    <div class="gallery-item-25">
+        <img src="/assets/projects/learn-some-facts/bones.png">
+    </div>
+    <div class="gallery-item-25">
+        <img src="/assets/projects/learn-some-facts/cough.png">
+    </div>
+</div>
+
+<div class="building-it">
+    <img src="/assets/projects/learn-some-facts/Buildin it.png">
+</div>
+<div class="gallery">
+    <div class="gallery-item building-it-text">
+        <p>
+            The three pages also became a progression in how I approached Rive.
+        </p><br />
+        <p>
+            Breast cancer was the starting point. It was my first experience building a
+            project like this in Rive, so I was mainly figuring out how the different
+            pieces worked and getting comfortable with State Machines, listeners and
+            interactive states.
+        </p><br />
+        <p>
+            Bone cancer came next. I was able to take what I'd learned from the first
+            page and start pushing the interactions further. I became more confident
+            with the animation and started introducing more interactive elements.
+        </p><br />
+        <p>
+            By the time I reached lung cancer, I was much more comfortable
+            experimenting. I started using more complex interactions, including lists
+            and data binding, and felt more confident designing the experience around
+            what the user could do rather than just what they could see.
+        </p><br />
+        <p>
+            Looking back at the three pages, you can see that progression quite
+            clearly. The visual design becomes more confident, the interactions
+            become more ambitious, and my understanding of Rive develops
+            alongside the project.
+        </p><br />
+        <p>
+            The learning curve was definitely one of the biggest challenges. I was
+            already comfortable with design and animation, but Rive introduced a more
+            technical way of thinking. State Machines, overlapping timelines, listeners
+            and data binding all took some time to wrap my head around.
+        </p><br />
+        <p>
+            That was also one of the most rewarding parts of the project. Each page
+            gave me something new to learn, which I could carry into the next one and
+            use to make the experience more ambitious.
+        </p>
+    </div>
+    <div class="gallery-item">
+        <img id="triggers-and-booleans" src="/assets/projects/learn-some-facts/Triggers-and-booleans.png">
+        <img src="/assets/projects/learn-some-facts/State-Machine.png">
+    </div>
+</div>
+
+
+
+    <div class="pre-footer-info">
+        <h1 class="font-black">LETS WORK TOGETHER!</h1>
+        <h2><a href="mailto:hi@alexsmithdesigns.uk">hi@alexsmithdesigns.uk</a></h2>
+    </div>
+
+    <svg viewBox="0 0 600 30" class="banner-drip">
+        <path d="M0,20 C100,0 200,30 300,20 C350,15 500,0 600,20  L600,30 L0,30 Z"></path>
+    </svg>
+    <footer>
+        <a class="footer-link" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
+            <i aria-label="instagram" class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+        <a class="footer-link" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
+            <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-2xl"></i>
+        </a>
+        <a class="footer-link" aria-label="tiktok" href="https://www.tiktok.com/@alex.smith.motiondesign">
+            <i aria-label="tiktok" class="fa-brands fa-tiktok fa-2xl"></i>
+        </a>
+        <a class="footer-link" aria-label="rive" href="https://rive.app/@alexsmithdesigns.uk">
+            <i aria-label="rive" class="fa-solid fa-r fa-2xl"></i>
+        </a>
+        <a class="footer-link" aria-label="contra" href="https://contra.com/alex_smith_j41lq0xm">
+            <i aria-label="contra" class="fa-solid fa-c fa-2xl"></i>
+        </a>
+    </footer>
+    
+    <script>
+    var riveInstaces = [];
+    var canvasId = 1;
+
+    function fillRiveCanvas(name, stateMachine, artboard) {
+        const canvas = document.getElementById("canvas-" + canvasId);
+        const autoplay = canvasId == 1 ? true : false;
+        const r = new rive.Rive({
+            src: "/assets/interactive/" + name + ".riv",
+            canvas: canvas,
+            stateMachines: stateMachine || "State Machine 1",
+            autoplay: autoplay,
+            autoBind: true,
+            useOffscreenRenderer: true,
+            onLoad: () => {
+                r.resizeDrawingSurfaceToCanvas();
+            },
+        });
+        canvas.addEventListener("mouseover", () => r.play());
+        riveInstaces.push(r);
+        canvasId = canvasId + 1;
+    }
+    //  
+    fillRiveCanvas("my_interactive_face");
+    // 
+    //  
+    fillRiveCanvas("lung_cancer");
+    //  
+    fillRiveCanvas("bone_cancer");
+    //  
+    fillRiveCanvas("breast_cancer_v2");
+    // 
+
+    window.addEventListener("resize", () => {
+        riveInstaces.forEach((r) => {
+            r.resizeDrawingSurfaceToCanvas();
+        });
+    });
+</script>
+    
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.overflowing-img {
+    margin: -2px -11.55%; 
+    width: 123.2%;
+}
+
+.overflow-container {
+    overflow-x: visible;
+}
+
+@media screen and (max-width: 800px) {
+
+    .overflow-container {
+        overflow-x: hidden;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

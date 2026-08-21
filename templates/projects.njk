@@ -1,0 +1,98 @@
+{% extends "./layout.njk" %}
+{% block headStylesheets %}
+<link rel="preload" as="style" href="/projects.css">
+<link rel="stylesheet" href="/projects.css">
+{% endblock %}
+{% set activeNav = 2 %}
+{% block content %}
+{% set galleryItems = [
+{
+link: "phantom-pops",
+thumb: "home/Phantom_Pops.gif",
+label: "Phantom Pops"
+},
+{
+link: "ben-and-jerrys",
+thumb: "projects/The_Ben_and_Jerry_Story.gif",
+label: "The Ben & Jerry's Project"
+},
+{
+link: "learn-some-facts",
+thumb: "projects/learn-some-facts.gif",
+label: "Learn Some Facts - Cancer"
+},
+{
+link: "kantar",
+thumb: "projects/Kantar.gif",
+label: "Kantar - Freshly Prepared Consumer Insights"
+},
+{
+link: "carlis-story",
+thumb: "home/Carlis_Story.gif",
+label: "Homeless Oxfordshire - Carli's Story"
+},
+{
+link: "nominet",
+thumb: "projects/Nominet_TV_Ad.gif",
+label: "Nominet - 2023 TV advert"
+},
+{
+link: "we-are",
+thumb: "projects/We are Social Vid.gif",
+label: "We Are - Social Media"
+},
+{
+link: "lune-and-wild",
+thumb: "projects/Lune and Wild.gif",
+label: "Lune & Wild"
+}
+] %}
+{% include "./shards/gallery.njk" %}
+
+<div id="playground" class="playground">
+  <svg viewBox="0 0 800 150" class="playground-text">
+    <text x="400" y="150" font-size="64" text-anchor="middle" transform="rotate(-5)">
+      Playground!
+    </text>
+  </svg>
+</div>
+
+{% set playgroundItemsA = [
+  "thumbs/home/Playground_Face_Rig.gif",
+  "thumbs/playground/Converse.gif",
+  "projects/keyboard/Comp 1_3_optimized.gif",
+  "projects/creepy-crawlies/Spider_optimized.gif",
+  "thumbs/playground/Lightbulb_Moment_optimized.gif",
+  "thumbs/playground/Scene_1_Main_Comp_optimized.gif",
+  "thumbs/playground/Collage_Style_Electronic_Board_optimized.gif",
+  "thumbs/playground/Eyes_-_Mp4_optimized.gif"
+] %}
+
+{% set playgroundItemsB = [
+  "thumbs/playground/Colour_V2_optimized.gif",
+  "thumbs/playground/jazz-colab.gif",
+  "thumbs/playground/Sax_Player_1_optimized.gif",
+  "thumbs/playground/Summertime_V2_20_optimized.gif",
+  "thumbs/playground/Scary_Space_optimized.gif",
+  "thumbs/playground/just-keep-swimming.gif",
+  "thumbs/playground/HAHAHAHA_-_Wide_-_Mp4_optimized.gif"
+] %}
+
+<div class="playground-gallery">
+  <div class="playground-gallery-column">
+    {% for playgroundItemA in playgroundItemsA %}
+    <div class="playground-gallery-item">
+      <img src="/assets/{{ playgroundItemA }}" loading="lazy">
+    </div>
+    {% endfor %}
+  </div>
+  <div class="playground-gallery-column">
+    {% for playgroundItemB in playgroundItemsB %}
+    <div class="playground-gallery-item">
+      <img src="/assets/{{ playgroundItemB }}" loading="lazy">
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

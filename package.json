@@ -1,0 +1,34 @@
+{
+  "name": "portfolio-website",
+  "version": "2.0.0",
+  "description": "portfolio website https://alexsmithdesigns.uk/",
+  "keywords": [
+    "portfolio",
+    "motion-design",
+    "animation"
+  ],
+  "homepage": "https://github.com/thatalienET/portfolio-website#readme",
+  "bugs": {
+    "url": "https://github.com/thatalienET/portfolio-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatalienET/portfolio-website.git"
+  },
+  "license": "ISC",
+  "author": "Ben Lang",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "build": "node main.js build",
+    "watch": "node main.js watch",
+    "clean": "node main.js clean"
+  },
+  "dependencies": {
+    "glob": "^13.0.6",
+    "nunjucks-to-html": "^1.1.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.6.0"
+  }
+}

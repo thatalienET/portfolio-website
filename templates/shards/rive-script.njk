@@ -1,0 +1,35 @@
+<script>
+    var riveInstaces = [];
+    var canvasId = 1;
+
+    function fillRiveCanvas(name, stateMachine, artboard) {
+        const canvas = document.getElementById("canvas-" + canvasId);
+        const autoplay = canvasId == 1 ? true : false;
+        const r = new rive.Rive({
+            src: "/assets/interactive/" + name + ".riv",
+            canvas: canvas,
+            stateMachines: stateMachine || "State Machine 1",
+            autoplay: autoplay,
+            autoBind: true,
+            useOffscreenRenderer: true,
+            onLoad: () => {
+                r.resizeDrawingSurfaceToCanvas();
+            },
+        });
+        canvas.addEventListener("mouseover", () => r.play());
+        riveInstaces.push(r);
+        canvasId = canvasId + 1;
+    }
+    // {% block headerRiveInstance %} 
+    fillRiveCanvas("my_interactive_face");
+    // {% endblock %}
+    // {% for riveInstance in riveInstances %} 
+    fillRiveCanvas("{{ riveInstance }}");
+    // {% endfor %}
+
+    window.addEventListener("resize", () => {
+        riveInstaces.forEach((r) => {
+            r.resizeDrawingSurfaceToCanvas();
+        });
+    });
+</script>

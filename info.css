@@ -1,8 +1,8 @@
 /* Info Section */
 
 .info-left {
-    width: 70%;
-    padding: 50px 0 0 7vw;
+    width: 65%;
+    padding: 50px 1vw 0 8vw;
     display: inline-block;
 }
 
@@ -41,7 +41,7 @@ h2 {
 
 .get-in-touch {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     font-size: 2.3vw;
 }

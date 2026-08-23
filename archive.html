@@ -31,7 +31,7 @@
     <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
     <script src="/shared.js" async></script>
     <script src="/pages/shared/carousel.js" async></script>
-    <script src="https://unpkg.com/@rive-app/webgl2@2"></script>
+    <script async src="https://unpkg.com/@rive-app/webgl2@2"></script>
     
     <!-- Add extra scripts here if needed -->
     
@@ -78,7 +78,7 @@
         <a href="/pages/archive/booking-com">
             <img aria-label="Booking.com - E-Learning Demo Video" src="/assets/thumbs/archive/Booking.com - Thumbnail 1.jpg" loading="lazy">
             <div class="gallery-label">
-                <span class="label-text">Booking.com - E-Learning Demo Video</span>
+                <span class="label-text font-regular">Booking.com - E-Learning Demo Video</span>
             </div>
         </a>
     </div>
@@ -87,7 +87,7 @@
         <a href="/pages/archive/autodesk-volker">
             <img aria-label="Autodesk - Volker Wessels" src="/assets/thumbs/archive/Autodesk Doodly - Thumbnail 1.jpg" loading="lazy">
             <div class="gallery-label">
-                <span class="label-text">Autodesk - Volker Wessels</span>
+                <span class="label-text font-regular">Autodesk - Volker Wessels</span>
             </div>
         </a>
     </div>
@@ -96,7 +96,7 @@
         <a href="/pages/archive/panasonic">
             <img aria-label="Panasonic - Website Highlight" src="/assets/thumbs/archive/Panasonic - Thumbnail 1.jpg" loading="lazy">
             <div class="gallery-label">
-                <span class="label-text">Panasonic - Website Highlight</span>
+                <span class="label-text font-regular">Panasonic - Website Highlight</span>
             </div>
         </a>
     </div>
@@ -105,7 +105,7 @@
         <a href="/pages/archive/autodesk-hero">
             <img aria-label="Autodesk - Website Hero Video" src="/assets/thumbs/archive/Autodesk Hero Vid - Thumbnail 1.jpg" loading="lazy">
             <div class="gallery-label">
-                <span class="label-text">Autodesk - Website Hero Video</span>
+                <span class="label-text font-regular">Autodesk - Website Hero Video</span>
             </div>
         </a>
     </div>
@@ -114,7 +114,7 @@
         <a href="/pages/archive/microplastics">
             <img aria-label="GCRF - Microplastic Pollution with Dr Andrews" src="/assets/thumbs/archive/Microplastics in Malaysia - Thumbnail 1.jpg" loading="lazy">
             <div class="gallery-label">
-                <span class="label-text">GCRF - Microplastic Pollution with Dr Andrews</span>
+                <span class="label-text font-regular">GCRF - Microplastic Pollution with Dr Andrews</span>
             </div>
         </a>
     </div>
@@ -123,7 +123,7 @@
         <a href="/pages/archive/adobe">
             <img aria-label="Adobe - Happy Keli" src="/assets/thumbs/archive/Happy Keli - Thumbnail 1.jpg" loading="lazy">
             <div class="gallery-label">
-                <span class="label-text">Adobe - Happy Keli</span>
+                <span class="label-text font-regular">Adobe - Happy Keli</span>
             </div>
         </a>
     </div>
@@ -141,25 +141,35 @@
     </svg>
     <footer>
         <a class="footer-link" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
-            <i aria-label="instagram" class="fa-brands fa-instagram fa-2xl"></i>
+            <i aria-label="instagram" class="fa-brands fa-instagram"></i>
         </a>
         <a class="footer-link" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
-            <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-2xl"></i>
+            <i aria-label="linkedin" class="fa-brands fa-linkedin-in"></i>
         </a>
         <a class="footer-link" aria-label="tiktok" href="https://www.tiktok.com/@alex.smith.motiondesign">
-            <i aria-label="tiktok" class="fa-brands fa-tiktok fa-2xl"></i>
+            <i aria-label="tiktok" class="fa-brands fa-tiktok"></i>
         </a>
         <a class="footer-link" aria-label="rive" href="https://rive.app/@alexsmithdesigns.uk">
-            <i aria-label="rive" class="fa-solid fa-r fa-2xl"></i>
+            <i aria-label="rive" class="fa-solid fa-r"></i>
         </a>
         <a class="footer-link" aria-label="contra" href="https://contra.com/alex_smith_j41lq0xm">
-            <i aria-label="contra" class="fa-solid fa-c fa-2xl"></i>
+            <i aria-label="contra" class="fa-solid fa-c"></i>
         </a>
     </footer>
     
     <script>
     var riveInstaces = [];
     var canvasId = 1;
+
+    function waitForRive(callback) {
+    // Check every 100ms to see if inJump is available
+    var interval = setInterval(function() {
+            if (typeof Animation !== 'undefined') {
+                clearInterval(interval);  // Stop checking once it's available
+                callback();  // Execute the callback function
+            }
+        }, 100);
+    }
 
     function fillRiveCanvas(name, stateMachine, artboard) {
         const canvas = document.getElementById("canvas-" + canvasId);
@@ -169,6 +179,7 @@
             canvas: canvas,
             stateMachines: stateMachine || "State Machine 1",
             autoplay: autoplay,
+            isTouchScrollEnabled: autoplay,
             autoBind: true,
             useOffscreenRenderer: true,
             onLoad: () => {
@@ -179,15 +190,20 @@
         riveInstaces.push(r);
         canvasId = canvasId + 1;
     }
-    //  
-    fillRiveCanvas("my_interactive_face");
-    // 
-    // 
 
-    window.addEventListener("resize", () => {
-        riveInstaces.forEach((r) => {
-            r.resizeDrawingSurfaceToCanvas();
+    waitForRive(function() {
+
+        //  
+        fillRiveCanvas("my_interactive_face");
+        // 
+        // 
+
+        window.addEventListener("resize", () => {
+            riveInstaces.forEach((r) => {
+                r.resizeDrawingSurfaceToCanvas();
+            });
         });
+    
     });
 </script>
     

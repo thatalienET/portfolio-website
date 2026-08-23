@@ -1,8 +1,8 @@
 .head-banner p {
-    padding: 2vw;
+    padding: 1vw;
     color: #F8EFE3;
-    margin-top: -12vw;
-    font-size: 1.9vw;
+    margin-top: calc(-10vw - 15px);
+    font-size: calc(1.7vw);
 }
 
 .top-gallery {
@@ -11,14 +11,27 @@
 
 .gallery {
     justify-content: center;
-    padding-left: 11vw;
-    padding-right: 11vw;
+    padding-left: calc(11vw - 50px);
+    padding-right: calc(11vw - 50px);
 }
 
 .gallery-item {
     margin: 2vw 0;
     padding: 0 2vw;
     font-size: 1.3vw;
+}
+
+.text-block {
+    margin: 1vw 0;
+    padding: 0 0.5vw 0 2vw;
+}
+
+.text-block h2 {
+    font-size: calc(3vw + 20px);
+}
+
+.text-block p {
+    font-size: calc(1.4vw);
 }
 
 .gallery-item canvas {
@@ -31,23 +44,33 @@
     overflow: visible;
 }
 
+.text-left {
+    text-align: left;
+    overflow: visible;
+}
+
+.starting-point-wrapper {
+    padding: 0;
+    margin-bottom: -8vw;
+}
+
 .starting-point {
-    font-size: calc(4vw + 10px);
+    font-size: calc(3vw + 20px);
     margin-bottom: 1vw;
 }
 
 .paper-tag {
     position: relative;
-    width: 40%;
+    width: 55%;
     z-index: 1000;
-    left: -11vw;
-    top: -30vw;
+    left: -9vw;
+    top: calc(-35vw - 40px);
 }
 
 .yellow-svg {
     z-index: 1;
     margin-top: 3vw;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .yellow-svg path {
@@ -68,18 +91,12 @@
     position: relative;
     top: -77vw;
     font-size: 1.3vw;
-    margin-bottom: -65vw;
-}
-
-.visual-direction h2 {
-    font-size: 4vw;
-    font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -75vw;
 }
 
 .gallery-item-25 {
     padding: 0 1vw;
-    margin-top: 1.5vw;
+    margin: 1.5vw 0;
 }
 
 .building-it {
@@ -87,11 +104,7 @@
     z-index: 1000;
     width: 25%;
     left: 6%;
-    top: 2vw
-}
-
-.building-it-text {
-    font-size: 1.5vw;
+    top: 3vw
 }
 
 #triggers-and-booleans {
@@ -99,6 +112,19 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    .wrap.head-banner {
+        padding: 0;
+    }
+
+    .head-banner p {
+        margin-top: calc(-10vw - 10px);
+        font-size: 2.2vw;
+    }
+
+    .top-gallery {
+        margin-bottom: -12vw;
+    }
 
     .top-gallery .text-center {
         margin-bottom: -8vw;
@@ -110,7 +136,15 @@
 
     .paper-tag {
         left: -24vw;
-        top: -63vw;
+        top: calc(-70vw - 75px);
+    }
+
+    .text-block h2 {
+        font-size: calc(3vw + 20px);
+    }
+
+    .text-block p {
+        font-size: calc(1vw + 10px);
     }
 
     .black-svg {
@@ -122,16 +156,12 @@
         padding-top: 50px;
         position: unset;
         background-color: #191a1a;
-        font-size: 2vw;
     }
-    
+
     .building-it {
         width: 40%;
         left: 3%;
+        top: -10px;
     }
 
-    .building-it-text {
-        padding: 10px 0vw;
-        font-size: calc(1vw + 10px);
-    }
 }

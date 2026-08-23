@@ -14,26 +14,27 @@
     justify-content: space-around;
 }
 
-.gallery-item-left img {
-    width: 60%;
-    margin-bottom: 3vw;
-}
-
 .gallery-item {
     font-size: calc(0.7vw + 10px);
 }
 
-.gallery-item-right img {
-    width: 70%;
-    margin: 1vw 0;
-}
-
 .quad-wrapper {
-    display: grid;
-    grid-column: 50% 50%;
-    grid-row: 50% 50%;
+    padding: 1vw calc(11vw - 100px);
+    margin: 0;
 }
 
 .quad {
     width: 49%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+
+    .overview img {
+        width: 60%;
+    }
+
+    .gallery-item {
+        margin-top: 50px;
+    }
 }

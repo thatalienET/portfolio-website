@@ -31,6 +31,16 @@
     overflow: hidden;
 }
 
+.gif {
+    animation: play 0.5s infinite steps(1);
+    animation-play-state: paused;
+}
+
+.gif:hover {
+    animation-play-state:running;
+}
+
+
 @media screen and (max-width: 800px) {
 
     .playground-gallery-column {

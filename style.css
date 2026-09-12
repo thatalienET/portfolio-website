@@ -448,6 +448,20 @@ iframe {
     }
 }
 
+.gallery-hashtag {
+    float: left;
+    margin: 1vw 0.2vw;
+}
+
+.hashtag-text {
+    padding: 0.2vw 0.6vw;
+    border: #115F5E solid 1px;
+    border-radius: 25px;
+    background-color: #115F5E;
+    color: #CCCC55;
+    font-size: calc(5px + 0.8vw);
+}
+
 .gallery-label {
     float: right;
     height: 2vw;

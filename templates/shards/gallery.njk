@@ -3,17 +3,17 @@
     <div class="gallery-item">
         <a href="/pages/{{ item.link }}">
             <img aria-label="{{ item.label }}" src="/assets/thumbs/{{ item.thumb }}" loading="lazy">
+            {% if item.label %}
+            <div class="gallery-label">
+                <span class="label-text font-regular">{{ item.label }}</span>
+            </div>
+            {% endif %}
             {% if item.hashtags %}
                 {% for hashtag in item.hashtags %}
                     <div class="gallery-hashtag">
                         <span class="hashtag-text font-regular">{{ hashtag }}</span>
                     </div>
                 {% endfor %}
-            {% endif %}
-            {% if item.label %}
-            <div class="gallery-label">
-                <span class="label-text font-regular">{{ item.label }}</span>
-            </div>
             {% endif %}
         </a>
     </div>

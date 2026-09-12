@@ -1,6 +1,24 @@
 {% extends "./layout.njk" %}
+{% block headStylesheets %}
+<link rel="preload" as="style" href="/interactive.css">
+<link rel="stylesheet" href="/interactive.css">
+{% endblock %}
 {% set activeNav = 3 %}
 {% block content %}
+<div style="text-align: center;">
+    <h1>INTERACTIVE MOTION EXPERIENCES</h1> <br/>
+</div>
+<div class="expert-wrapper">
+    <a href="https://contra.com/rive" target="_blank">
+        <div class="rive-expert-image">
+            <img alt="RIVE_EXPERT" src="https://builds.contra.com/assets/assets/static/Rive.FfO6UyQo.svg">
+        </div>
+        <div class="expert-text-wrapper">
+            <p class="rive-expert-header">Rive expert</p>
+            <p class="rive-expert-text">Certified by Rive as highly skilled.</p>
+        </div>
+    </a>
+</div>
 <div class="gallery gallery-interactive">
     <div class="gallery-item-flex-l">
         <canvas id="canvas-2" width="1200" height="600" class="rive"></canvas>
@@ -13,14 +31,14 @@
 </div>
 {% endblock %}
 {% set riveInstances = [
-  "phantom_pops_V4",
-  "dynamic_toolkit_uv_index_v5",
-  "dragon",
-  "lung_cancer",
-  "bone_cancer",
-  "breast_cancer_v2",
-  "Aliens Aboard_v8",
-  "icons_v3",
-  "my_interactive_face",
-  "messy_files_v4.2"
-    ] %}
+"phantom_pops_V4",
+"dynamic_toolkit_uv_index_v5",
+"dragon",
+"lung_cancer",
+"bone_cancer",
+"breast_cancer_v2",
+"Aliens Aboard_v8",
+"icons_v3",
+"my_interactive_face",
+"messy_files_v4.2"
+] %}

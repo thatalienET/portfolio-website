@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>Alex Smith Designs</title>
+    <meta name=description content="Alex Smith Motion Designer Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- 
+        <meta http-equiv="refresh" content="0; url=https://alexsmithdesigns.uk/under-construction" />
+    -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preload" as="style" href="/style.css">
+    <link rel="preload" as="style" href="/pages/shared/carousel.css">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap">
+    <link rel="preload" as="script" href="https://unpkg.com/@rive-app/webgl2@2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Stylesheets -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/pages/shared/carousel.css">
+    
+<link rel="preload" as="style" href="/pages/hummey.css">
+<link rel="stylesheet" href="/pages/hummey.css">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/edfb6d0ddc.js" crossorigin="anonymous" async></script>
+    <script src="/shared.js" async></script>
+    <script src="/pages/shared/carousel.js" async></script>
+    <script async src="https://unpkg.com/@rive-app/webgl2@2"></script>
+    
+    <!-- Add extra scripts here if needed -->
+    
+</head>
+
+<body>
+    <nav>
+        <a href="/" aria-label="face-logo home link" class="logo-wrapper">
+            <canvas id="canvas-1" class="logo" aria-label="alex-face"></canvas>
+        </a>
+        <!-- Navigation links -->
+        
+        <div id="topnav" class="topnav">
+            <a href="/" >HOME</a>
+            <a href="/projects" >PROJECTS</a>
+            <a href="/interactive" >INTERACTIVE</a>
+            <a href="/info" >INFO</a>
+        </div>
+        
+        <div class="links">
+            <a class="links-item" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
+                <i aria-label="instagram" class="fa-brands fa-instagram fa-sm"></i>
+            </a>
+            <a class="links-item" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
+                <i aria-label="linkedin" class="fa-brands fa-linkedin-in fa-sm"></i>
+            </a>
+            <a class="links-item" aria-label="tiktok" href="https://www.tiktok.com/@alex.smith.motiondesign">
+                <i aria-label="tiktok" class="fa-brands fa-tiktok fa-sm"></i>
+            </a>
+        </div>
+        <a href="#" rel="nofollow" aria-label="menu-icon" class="menu-icon" onclick="menuControl()">
+            <i aria-label="menu-icon" class="fa fa-bars fa-2xs"></i>
+        </a>
+    </nav>
+    <svg viewBox="0 0 600 30" class="banner-drip">
+        <path d="M0,10 C100,30 200,0 300,10 C350,15 500,30 600,10  L600,00 L0,00 Z"></path>
+    </svg>
+
+    
+<div class="hummey-banner">
+    <img src="/assets/projects/hummey/Hummey_header.png" alt="Hummey Banner">
+</div>
+<div class="project">
+    <div class="hummey-explainer">
+        <img src="/assets/projects/hummey/Running_Loop_on_Jar_4x6.gif">
+        <p>
+            Hummey is a fictional honey brand created in
+            collaboration with a designer, exploring a warm,
+            playful and organic visual identity.
+            </br></br>
+            My role was to bring the brand to life through
+            motion, taking the existing identity and developing
+            a range of animated and interactive assets. Across
+            hand—drawn animation, social content, interactive
+            branding and product—focused motion, I explored how
+            movement could add personality and depth to the
+            brand.
+            </br></br>
+            The project allowed me to experiment with different
+            approaches to motion while keeping a consistent
+            visual language, from tactile frame—by—frame
+            animation to interactive digital experiences and
+            composited product visuals.
+            </br></br>
+            <b>Credits</b></br>
+            <b>Brand Design:</b> Woo Designs</br>
+            <b>Motion Design:</b> Alex Smith (Me!)</br>
+        </p>
+    </div>
+    <img class="hummey-img" src="/assets/projects/hummey/Hummy_Logo_&_Bees.gif">
+    <div class="hummey-text hummey-process">
+        I explored a range of approaches to bring the Hummey identity beyond the static designs. I started with a
+        hand—drawn, frame—by—frame cel animation of the logo, using the imperfections and tactile quality of the technique
+        to reinforce the brand's natural, handcrafted character. I then developed three animated Instagram Stories, adapting
+        the visual identity into short—form social content with a playful and engaging rhythm. To explore a more interactive
+        direction, I created a responsive version of the logo in Rive, allowing the identity to react to user interaction 
+        rather than simply playing as a fixed animation. Finally, I created a product—focused piece by compositing animation 
+        directly onto a honey jar, combining the moving elements with Hummey's label and wider brand assets. Together, these 
+        pieces allowed me to explore how motion could give the brand a more expressive and tangible presence across 
+        different formats, from social content and interactive experiences to physical product.
+    </div>
+    <img src="/assets/projects/hummey/Insta_Story's_Combined.gif">
+    <img src="/assets/projects/hummey/Have a play.svg" style="width: 15%; margin-bottom: -8%;">
+    <canvas id="canvas-2" style="width: 100%; padding: 5% 10%;"></canvas>
+    <div class="hummey-text">
+        <h2>Toolkits & Rigs</h2></br></br>
+        <h3>After Effects</h3></br></br>
+        <p>
+            For the character and logo animation, I used Duik Angela and Joysticks 'n Sliders to build
+            flexible rigs and create expressive animation controls. These tools allowed me to work
+            procedurally with the artwork, making it easier to experiment with movement and quickly iterate on
+            I also allowed easier different animation states. </br></br>
+
+            made use of Essential Graphics to build controls outside of the source compositions. This
+            me to expose animation states and keyframes at a higher level, making the final animations
+            to manage and adjust without needing to continually work inside the original compositions.
+        </p>
+    </div>
+    <img class="hummey-triple-img" src="/assets/projects/hummey/Bee Rig BTS.gif">
+    <img class="hummey-triple-img" src="/assets/projects/hummey/Bee Landing - Rig and Essential Graphics BTS.gif">
+    <img class="hummey-triple-img" src="/assets/projects/hummey/Flower Running Rig BTS.gif">
+    <div class="hummey-text">
+        <h3>Rive</h3></br></br>
+        <p>
+            For the interactive logo, I used Rive's rigging and state—based animation tools to create a more
+            responsive version of the Hummey identity. I used the bone system to animate the flower stem,
+            while joysticks gave me control over the bee and different flower states. </br></br>
+
+            I then used a ViewMode1 to connect these elements and create the interactive behaviour, allowing
+            the different animation states to respond dynamically to user input. This gave the identity a more
+            playful and reactive quality while keeping the animation system flexible and easy to control.
+        </p>
+    </div>
+    <img class="hummey-double-left" src="/assets/projects/hummey/Rive_-_Flower_Rig_BTS.gif">
+    <img class="hummey-double-right" src="/assets/projects/hummey/Rive_-_Interactive_logo_-_Viewmodel_Highlight.gif">
+</div>
+
+
+    <div class="pre-footer-info">
+        <h1 class="font-black">LETS WORK TOGETHER!</h1>
+        <h2><a href="mailto:hi@alexsmithdesigns.uk">hi@alexsmithdesigns.uk</a></h2>
+    </div>
+
+    <svg viewBox="0 0 600 30" class="banner-drip">
+        <path d="M0,20 C100,0 200,30 300,20 C350,15 500,0 600,20  L600,30 L0,30 Z"></path>
+    </svg>
+    <footer>
+        <a class="footer-link" aria-label="instagram" href="https://www.instagram.com/studioalexandraink">
+            <i aria-label="instagram" class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="footer-link" aria-label="linkedin" href="https://www.linkedin.com/in/alexannesmith/">
+            <i aria-label="linkedin" class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a class="footer-link" aria-label="tiktok" href="https://www.tiktok.com/@alex.smith.motiondesign">
+            <i aria-label="tiktok" class="fa-brands fa-tiktok"></i>
+        </a>
+        <a class="footer-link" aria-label="rive" href="https://rive.app/@alexsmithdesigns.uk">
+            <i aria-label="rive" class="fa-solid fa-r"></i>
+        </a>
+        <a class="footer-link" aria-label="contra" href="https://contra.com/alex_smith_j41lq0xm">
+            <i aria-label="contra" class="fa-solid fa-c"></i>
+        </a>
+    </footer>
+    
+    <script>
+    var riveInstaces = [];
+    var canvasId = 1;
+
+    function waitForRive(callback) {
+    // Check every 100ms to see if inJump is available
+    var interval = setInterval(function() {
+            if (typeof Animation !== 'undefined') {
+                clearInterval(interval);  // Stop checking once it's available
+                callback();  // Execute the callback function
+            }
+        }, 100);
+    }
+
+    function fillRiveCanvas(name, stateMachine, artboard) {
+        const canvas = document.getElementById("canvas-" + canvasId);
+        const autoplay = canvasId == 1 ? true : false;
+        const r = new rive.Rive({
+            src: "/assets/interactive/" + name + ".riv",
+            canvas: canvas,
+            stateMachines: stateMachine || "State Machine 1",
+            autoplay: autoplay,
+            isTouchScrollEnabled: autoplay,
+            autoBind: true,
+            useOffscreenRenderer: true,
+            onLoad: () => {
+                r.resizeDrawingSurfaceToCanvas();
+            },
+        });
+        canvas.addEventListener("mouseover", () => r.play());
+        riveInstaces.push(r);
+        canvasId = canvasId + 1;
+    }
+
+    waitForRive(function() {
+
+        //  
+        fillRiveCanvas("my_interactive_face");
+        // 
+        //  
+        fillRiveCanvas("hummey");
+        // 
+
+        window.addEventListener("resize", () => {
+            riveInstaces.forEach((r) => {
+                r.resizeDrawingSurfaceToCanvas();
+            });
+        });
+    
+    });
+</script>
+    
+</body>
+
+</html>

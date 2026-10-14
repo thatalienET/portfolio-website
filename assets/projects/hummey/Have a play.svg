@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.01 98.76">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Courier, Courier;
+        font-size: 18px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Projects_-_Subpages" data-name="Projects - Subpages">
+    <g id="Hummey">
+      <path class="cls-2" d="M184.05,61.19c2.81,2.63,5.61,5.25,8.42,7.88,3.07-2.53,6.15-5.05,9.22-7.58"/>
+      <text class="cls-1" transform="translate(4.47 71.26) rotate(-18.34)"><tspan x="0" y="0">Its interactive! </tspan><tspan x="32.41" y="21.6">Have a play</tspan></text>
+      <path class="cls-2" d="M156.88,39.06c8.71-3.66,18.68-2.42,26.04,3.28,8,6.2,11.62,16.69,9.22,26.72"/>
+    </g>
+  </g>
+</svg>

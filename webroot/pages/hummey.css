@@ -75,6 +75,10 @@
 
 @media screen and (max-width: 800px) {
 
+    .hummey-banner img {
+      width: calc(35vw + 200px);
+    }
+
     .hummey-explainer {
         margin: 0px -10px;
         border-radius: 0;

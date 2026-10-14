@@ -1,0 +1,122 @@
+
+.hummey-banner {
+    background-color: #F3DB95;
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    margin-top: -5vw;
+}
+
+.hummey-banner img {
+    max-width: 1200px;
+    width: calc(35vw + 300px);
+}
+
+.hummey-explainer {
+    background-color: black;
+    border-radius: 25px;
+    margin: 50px -50px;
+}
+
+.hummey-explainer img {
+    width: 40%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.hummey-explainer p {
+    color: #F3DB95;
+    width: 59%;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    padding: 3vw 4vw 0;
+}
+
+.hummey-process {
+    margin: 50px 25px;
+}
+
+.hummey-text {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.35vw;
+    line-height: 1.7vw;
+    font-weight: 600;
+}
+
+.hummey-text h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4.5vw;
+}
+
+.hummey-text h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vw;
+}
+
+.hummey-triple-img {
+    width: 31%;
+    margin: 50px 1%;
+}
+
+.hummey-double-left {
+    width: 44%;
+    margin: 50px 0;
+    vertical-align: middle;
+}
+
+.hummey-double-right {
+    width: 55%;
+    margin: 50px 0;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+
+    .hummey-explainer {
+        margin: 0px -10px;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .hummey-explainer img {
+        margin-top: 40px;
+        width: calc(100% - 50px);
+        border-radius: 0;
+    }
+
+    .hummey-explainer p {
+        width: 100%;
+        padding: 40px 25px;
+        background-color: black;
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
+
+    .hummey-img {
+        width: calc(100% + 20px);
+        margin: 0 -10px ;
+    }
+
+    .hummey-text {
+        padding: 0 25px;
+        font-size: 3vw;
+        line-height: 3.4vw;
+    }
+
+    .hummey-text h2 {
+        font-size: 8vw;
+    }
+
+    .hummey-text h3 {
+        font-size: 5vw;
+    }
+ 
+    .hummey-triple-img, .hummey-double-left, .hummey-double-right {
+        width: 90%;
+        margin: 5%;
+    }
+
+}
